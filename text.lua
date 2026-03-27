@@ -17,7 +17,7 @@ _G.FishItConfig = _G.FishItConfig or {
     },
     ["Auto Trade"] = {
         ["Enabled"] = true,
-        ["Whitelist Username"] = {"kaidengengsssss1", "kaidengengsssss2", "kaidengengsssss3", "kaidengengsssss4", "kaidengengsssss11", "kaidengengsssss12", "kaidengengsssss13", "kaidengengsssss14", "kaidengengsssss15", "dandisukacupang01", "dandipenampunglele2"},
+        ["Whitelist Username"] = {"kaidengengsssss1", "kaidengengsssss2", "kaidengengsssss3", "kaidengengsssss4", "kaidengengsssss11", "kaidengengsssss12", "kaidengengsssss13", "kaidengengsssss14", "kaidengengsssss15", "kaidengengsssss16", "kaidengengsssss17", "kaidengengsssss18", "kaidengengsssss19", "kaidengengsssss20", "dandisukacupang01", "dandipenampunglele2"},
         ["Category Fish"] = {
             "Secret",
             -- {Tier = "Mythic", Variant = "Stone"}, -- Tier + Variant
@@ -86,13 +86,10 @@ _G.FishItConfig = _G.FishItConfig or {
         },
     },
     ["Event"] = {
-        ["Start Farm"] = false,
+        ["Start Farm"] = true,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Event List"] = {
-            "Megalodon Hunt",
-            "Ghost Shark Hunt",
-            "Shark Hunt",
-            -- ["Ancient Lochness Monster"] = true,
+            ["Thunderzilla Hunt"] = true,
         },
     },
     ["Enchant"] = {
