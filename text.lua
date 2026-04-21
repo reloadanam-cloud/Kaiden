@@ -1,18 +1,18 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cLVQyoBKvelhImg4hwbXB0mJzONvWHyFhMpAyqycNxI",
-    DeviceName = "Kaiden",
+    DeviceName = "Eggfarm",
 
     -- === MAIN FARM (choose one mode) ===
-    PotFarm = true,
-    EggFarm = false,
-    KeepEggFarm = false,
-    EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
+    PotFarm = false,
+    EggFarm = true,
+    KeepEggFarm = true,
+    EggName = {"Cracked Egg"},  -- Priority order: first egg tried, then second, etc.
     PrioritizePet = "2D Kitty",
 
     -- === EVENT FARM ===
     AutoBuyCandyChisel = false,
-    AutoBuyMochiMallet = true,
+    AutoBuyMochiMallet = false,
 
     -- === PET PEN ===
     PetPen = false,
@@ -21,29 +21,29 @@ getgenv().VO_CONFIG = {
     PrioritizePetPenTypes = {},  -- "Egg", "Normal", "Neon" (empty = all)
 
     -- === PET RELEASER ===
-    PetReleaser = false,
+    PetReleaser = true,
     ReleasePets = {},       -- Whitelist: names to release (empty = all)
-    ExcludeReleasePets = {}, -- Blacklist: names to never release (overrides ReleasePets)
+    ExcludeReleasePets = {"Jiggly Jerboa"}, -- Blacklist: names to never release (overrides ReleasePets)
     ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)
-    ReleaseRarities = {},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
+    ReleaseRarities = {"Common", "Uncommon", "Rare", "Ultra Rare"},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
     ExcludeRarities = {},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
 
     -- === AGE PETS ===
     AgePets = false,
     AgePetsNames = {},
-    AgePetsTypes = {},  -- "Normal", "Neon", "ALL"
+    AgePetsTypes = {"Normal"},  -- "Normal", "Neon", "ALL"
 
     -- === AUTO FUSE ===
     AutoFuse = false,
 
     -- === BUY PETS ===
-    BuyPets = false,
-    BuyPetName = {"Pet Name", "Pet Name 2"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPets = true,
+    BuyPetName = {"Cracked Egg",  "Crystal Egg"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===
     BuyBoxes = false,
     BoxName = "Choccybunny Box",   -- Name of the box to buy/open
-    OpenBoxes = false,
+    OpenBoxes = true,
 
     -- === LURE / BAIT ===
     BaitName = "Bait Name",
@@ -55,4 +55,4 @@ getgenv().VO_CONFIG = {
 
     ExtraOpti = false  -- Experimental; may cause issues
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"))() 
