@@ -25,7 +25,7 @@ getgenv().VO_CONFIG = {
     ReleasePets = {},       -- Whitelist: names to release (empty = all)
     ExcludeReleasePets = {"Jiggly Jerboa"}, -- Blacklist: names to never release (overrides ReleasePets)
     ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)
-    ReleaseRarities = {"Common", "Uncommon", "Rare"},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
+    ReleaseRarities = {"Common", "Uncommon", "Rare", "Ultra Rare"},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
     ExcludeRarities = {},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
 
     -- === AGE PETS ===
