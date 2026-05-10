@@ -1,13 +1,13 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cLVQyoBKvelhImg4hwbXB0mJzONvWHyFhMpAyqycNxI",
-    DeviceName = "Eggfarm",
+    DeviceName = "PotFarm",
 
     -- === MAIN FARM (choose one mode) ===
-    PotFarm = false,
-    EggFarm = true,
-    KeepEggFarm = true,
-    EggName = {"Cracked Egg"},  -- Priority order: first egg tried, then second, etc.
+    PotFarm = true,
+    EggFarm = false,
+    KeepEggFarm = false,
+    EggName = {""},  -- Priority order: first egg tried, then second, etc.
     PrioritizePet = "2D Kitty",
 
     -- === EVENT FARM ===
@@ -21,7 +21,7 @@ getgenv().VO_CONFIG = {
     PrioritizePetPenTypes = {},  -- "Egg", "Normal", "Neon" (empty = all)
 
     -- === PET RELEASER ===
-    PetReleaser = true,
+    PetReleaser = false,
     ReleasePets = {},       -- Whitelist: names to release (empty = all)
     ExcludeReleasePets = {"Jiggly Jerboa"}, -- Blacklist: names to never release (overrides ReleasePets)
     ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)
