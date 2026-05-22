@@ -1,13 +1,13 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cLVQyoBKvelhImg4hwbXB0mJzONvWHyFhMpAyqycNxI",
-    DeviceName = "EGGFARM",
+    DeviceName = "DUCKY",
 
     -- === MAIN FARM (choose one mode) ===
-    PotFarm = false,
-    EggFarm = true,
-    KeepEggFarm = true,
-    EggName = {"Cracked Egg"},  -- Priority order: first egg tried, then second, etc.
+    PotFarm = true,
+    EggFarm = false,
+    KeepEggFarm = false,
+    EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
     PrioritizePet = "2D Kitty",
 
     -- === EVENT FARM ===
@@ -21,7 +21,7 @@ getgenv().VO_CONFIG = {
     PrioritizePetPenTypes = {},  -- "Egg", "Normal", "Neon" (empty = all)
 
     -- === PET RELEASER ===
-    PetReleaser = true,
+    PetReleaser = false,
     ReleasePets = {},       -- Whitelist: names to release (empty = all)
     ExcludeReleasePets = {"Jiggly Jerboa"}, -- Blacklist: names to never release (overrides ReleasePets)
     ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)
@@ -37,13 +37,13 @@ getgenv().VO_CONFIG = {
     AutoFuse = false,
 
     -- === BUY PETS ===
-    BuyPets = true,
-    BuyPetName = {"Cracked Egg", "Crystal Egg"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPets = false,
+    BuyPetName = {"Pet Name", "Pet Name 2"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===
-    BuyBoxes = false,
-    BoxName = "Choccybunny Box",   -- Name of the box to buy/open
-    OpenBoxes = false,
+    BuyBoxes = true,
+    BoxName = "Rubber Ducky Box",   -- Name of the box to buy/open
+    OpenBoxes = true,
 
     -- === LURE / BAIT ===
     BaitName = "Bait Name",
