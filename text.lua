@@ -1,7 +1,7 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cLVQyoBKvelhImg4hwbXB0mJzONvWHyFhMpAyqycNxI",
-    DeviceName = "DELTAA",
+    DeviceName = "Bison",
 
     -- === MAIN FARM (choose one mode) ===
     PotFarm = true,
@@ -9,6 +9,9 @@ getgenv().VO_CONFIG = {
     KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
     EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
     PrioritizePet = "2D Kitty",
+
+        -- === JOURNEY / TRUCK EVENT ===
+    AutoBuyTruckPet = true,  -- Buy current truck pet with event currency after repairs
 
     -- === PET PEN ===
     PetPen = false,
@@ -25,19 +28,19 @@ getgenv().VO_CONFIG = {
     ExcludeRarities = {},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
 
     -- === AGE PETS ===
-    AgePets = false,
-    AgePetsNames = {},
-    AgePetsTypes = {"Normal"},  -- "Normal", "Neon", "ALL"
+    AgePets = true,
+    AgePetsNames = {"Alicorn", "Ancient Dragon", "Unicorn Ducky", "Dragonfly", "Bison"},
+    AgePetsTypes = {"ALL"},  -- "Normal", "Neon", "ALL"
 
     -- === AUTO FUSE ===
-    AutoFuse = false,
+    AutoFuse = true,
 
     -- === BUY PETS ===
-    BuyPets = false,
-    BuyPetName = {"Pet Name", "Pet Name 2"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPets = true,
+    BuyPetName = {"Bison"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===
-    BuyBoxes = true,
+    BuyBoxes = false,
     BoxName = "Rubber Ducky Box",   -- Name of the box to buy/open
     OpenBoxes = true,
 
@@ -50,7 +53,7 @@ getgenv().VO_CONFIG = {
     WebhookPets = {},  -- Pet names to send (empty = all)
 
     -- === AUTO TRADE (sender → receiver accounts) ===
-    AutoTrade = true,
+    AutoTrade = false,
     ReceiverUsernames = {"Xkaiidenn", "xkaiden560", "xkaiden561", "xkaiden562", "xkaiden563", "xkaiden564", "xkaiden565", "xkaiden566", "xkaiden567", "xkaiden568", "xkaiden760", "xkaiden569", "xkaiden570", "xkaiden571", "xkaiden572", "xkaiden573", "xkaiden574", "xkaiden575", "xkaiden576", "xkaiden577", "xkaiden578", "xkaiden579", "xkaiden580", "xkaiden581", "xkaiden582", "xkaiden583", "xkaiden584", "xkaiden585", "xkaiden586", "xkaiden587", "xkaiden588"},
     TradeItemList = {
          pets = {"Strawberry Shortcake Ducky","Unicorn Ducky", "Glyptodon Ducky", "Rubber Ducky", "Emberlight", "Dango Penguins", "Dragonfruit Fox", "Crystal Egg", "Alicorn", "Ancient Dragon", "Admin Abuse Egg", "Silverback Gorilla", "Dragonfly", "Diamond Dragon", "Blue Whale", "Diamond Griffin", "Diamond Mahi Mahi", "Diamond Unicorn", "Golden Dragon", "Golden Griffin", "Golden Unicorn", "Sea Turtle", "Dark Choccybunny", "Velocirooster", "Glormy Crab", "Purrowl", "Sushi Penguin"}
