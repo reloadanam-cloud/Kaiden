@@ -40,7 +40,7 @@ getgenv().VO_CONFIG = {
     BuyPetName = {"Bison"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===
-    BuyBoxes = false,
+    BuyBoxes = true,
     BoxName = "Rubber Ducky Box",   -- Name of the box to buy/open
     OpenBoxes = true,
 
