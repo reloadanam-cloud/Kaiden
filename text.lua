@@ -29,7 +29,7 @@ getgenv().VO_CONFIG = {
 
     -- === AGE PETS ===
     AgePets = true,
-    AgePetsNames = {"Alicorn", "Ancient Dragon", "Unicorn Ducky", "Dragonfly", "Bison"},
+    AgePetsNames = {"Alicorn", "Ancient Dragon", "Unicorn Ducky", "Dragonfly", "Bison", "Purrowl"},
     AgePetsTypes = {"ALL"},  -- "Normal", "Neon", "ALL"
 
     -- === AUTO FUSE ===
