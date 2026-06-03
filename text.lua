@@ -1,7 +1,7 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cLVQyoBKvelhImg4hwbXB0mJzONvWHyFhMpAyqycNxI",
-    DeviceName = "Bison",
+    DeviceName = "COIN",
 
     -- === MAIN FARM (choose one mode) ===
     PotFarm = true,
@@ -29,7 +29,7 @@ getgenv().VO_CONFIG = {
 
     -- === AGE PETS ===
     AgePets = true,
-    AgePetsNames = {"Alicorn", "Ancient Dragon", "Unicorn Ducky", "Dragonfly", "Bison", "Purrowl"},
+    AgePetsNames = {"Alicorn", "Ancient Dragon", "Unicorn Ducky", "Dragonfly", "Purrowl"},
     AgePetsTypes = {"ALL"},  -- "Normal", "Neon", "ALL"
 
     -- === AUTO FUSE ===
