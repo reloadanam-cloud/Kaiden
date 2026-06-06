@@ -1,7 +1,7 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cLVQyoBKvelhImg4hwbXB0mJzONvWHyFhMpAyqycNxI",
-    DeviceName = "NURSE",
+    DeviceName = "BACK COIN",
 
     -- === MAIN FARM (choose one mode) ===
     PotFarm = true,
@@ -11,7 +11,7 @@ getgenv().VO_CONFIG = {
     PrioritizePet = "2D Kitty",
 
         -- === JOURNEY / TRUCK EVENT ===
-    AutoBuyTruckPet = true,  -- Buy current truck pet with event currency after repairs
+    AutoBuyTruckPet = false,  -- Buy current truck pet with event currency after repairs
 
     -- === PET PEN ===
     PetPen = false,
@@ -29,7 +29,7 @@ getgenv().VO_CONFIG = {
 
     -- === AGE PETS ===
     AgePets = true,
-    AgePetsNames = {"Alicorn", "Ancient Dragon", "Unicorn Ducky", "Dragonfly", "Purrowl", "Bison", "Nurse Shark"},
+    AgePetsNames = {"Alicorn", "Ancient Dragon", "Unicorn Ducky", "Dragonfly", "Purrowl"},
     AgePetsTypes = {"ALL"},  -- "Normal", "Neon", "ALL"
 
     -- === AUTO FUSE ===
