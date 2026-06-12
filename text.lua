@@ -1,16 +1,19 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cLVQyoBKvelhImg4hwbXB0mJzONvWHyFhMpAyqycNxI",
-    DeviceName = "BACK COIN",
+    DeviceName = "PETFARM",
 
     -- === MAIN FARM (choose one mode) ===
-    PotFarm = true,
+    PotFarm = false,
     EggFarm = false,
+    PetFarm = true, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
     KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
+    KeepPetFarm = true, -- If true, will switch back when PetFarmList targets appear
     EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
+    PetFarmList = {"Alicorn", "Ancient Dragon", "Unicorn Ducky", "Purrowl", "Pilot Gull"}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
     PrioritizePet = "2D Kitty",
 
-        -- === JOURNEY / TRUCK EVENT ===
+    -- === EVENT ===
     AutoBuyTruckPet = true,  -- Buy current truck pet with event currency after repairs
 
     -- === PET PEN ===
@@ -29,7 +32,7 @@ getgenv().VO_CONFIG = {
 
     -- === AGE PETS ===
     AgePets = true,
-    AgePetsNames = {"Alicorn", "Ancient Dragon", "Unicorn Ducky", "Purrowl"},
+    AgePetsNames = {"Alicorn", "Ancient Dragon", "Dragonfly", "Unicorn Ducky", "Purrowl", "Pilot Gull"},
     AgePetsTypes = {"ALL"},  -- "Normal", "Neon", "ALL"
 
     -- === AUTO FUSE ===
@@ -37,29 +40,34 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = false,
-    BuyPetName = {},  -- Loops in order, buys all of first pet then moves to next
+    BuyPetName = {"Pet Name", "Pet Name 2"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===
     BuyBoxes = true,
     BoxName = "Rubber Ducky Box",   -- Name of the box to buy/open
     OpenBoxes = true,
 
-    -- === LURE / BAIT ===
+    -- === LURE ===
     BaitName = "Bait Name",
+
+    -- === AUTO TRADE ===
+    AutoTrade = false,
+    ReceiverUsernames = {},
+    TradeItemList = {
+         pets = {"Dog","Neon Cat"}
+    }, -- Per category: { pets = {"Dog","Neon Cat"}, food = {}, toys = {}, ... } — use "ALL" in a category to allow that whole category (pets still gated by TradePetType for bare names)
+    TradePetType = {"ALL"},       -- Only applies to pets: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG" — not used for food/toys/etc.; inline prefixes on pet strings (e.g. "Mega Dog") bypass this
+
+    -- === CASH TRANSFER ===
+    CashTransfer = false,
+    TransferMethods = {"mannequin"},  -- Current Methods: "mannequin"
+    TransferAccount = "",
 
     -- === DISCORD WEBHOOK ===
     WebhookEnabled = false,
     WebhookURL = "",
     WebhookPets = {},  -- Pet names to send (empty = all)
 
-    -- === AUTO TRADE (sender → receiver accounts) ===
-    AutoTrade = false,
-    ReceiverUsernames = {"Xkaiidenn", "xkaiden560", "xkaiden561", "xkaiden562", "xkaiden563", "xkaiden564", "xkaiden565", "xkaiden566", "xkaiden567", "xkaiden568", "xkaiden760", "xkaiden569", "xkaiden570", "xkaiden571", "xkaiden572", "xkaiden573", "xkaiden574", "xkaiden575", "xkaiden576", "xkaiden577", "xkaiden578", "xkaiden579", "xkaiden580", "xkaiden581", "xkaiden582", "xkaiden583", "xkaiden584", "xkaiden585", "xkaiden586", "xkaiden587", "xkaiden588"},
-    TradeItemList = {
-         pets = {"Strawberry Shortcake Ducky","Unicorn Ducky", "Glyptodon Ducky", "Rubber Ducky", "Emberlight", "Dango Penguins", "Dragonfruit Fox", "Crystal Egg", "Alicorn", "Ancient Dragon", "Admin Abuse Egg", "Silverback Gorilla", "Dragonfly", "Diamond Dragon", "Blue Whale", "Diamond Griffin", "Diamond Mahi Mahi", "Diamond Unicorn", "Golden Dragon", "Golden Griffin", "Golden Unicorn", "Sea Turtle", "Dark Choccybunny", "Velocirooster", "Glormy Crab", "Purrowl", "Sushi Penguin"}
-    }, -- Per category: { pets = {"Dog","Neon Cat"}, food = {}, toys = {}, ... } — use "ALL" in a category to allow that whole category (pets still gated by TradePetType for bare names)
-    TradePetType = {"ALL"},       -- Only applies to pets: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG" — not used for food/toys/etc.; inline prefixes on pet strings (e.g. "Mega Dog") bypass this
-
-    ExtraOpti = false  -- Experimental; may cause issues
+    ExtraOpti = false
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"))()
