@@ -11,7 +11,7 @@ getgenv().VO_CONFIG = {
     PrioritizePet = "2D Kitty",
 
         -- === JOURNEY / TRUCK EVENT ===
-    AutoBuyTruckPet = false,  -- Buy current truck pet with event currency after repairs
+    AutoBuyTruckPet = true,  -- Buy current truck pet with event currency after repairs
 
     -- === PET PEN ===
     PetPen = false,
