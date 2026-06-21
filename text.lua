@@ -1,7 +1,7 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cLVQyoBKvelhImg4hwbXB0mJzONvWHyFhMpAyqycNxI",
-    DeviceName = "PETFARM",
+    DeviceName = "FISHING",
 
     -- === MAIN FARM (choose one mode) ===
     PotFarm = false,
@@ -14,7 +14,7 @@ getgenv().VO_CONFIG = {
     PrioritizePet = "2D Kitty",
 
     -- === EVENT ===
-    AutoBuyTruckPet = true,  -- Buy current truck pet with event currency after repairs
+    AutoFish = true,
 
     -- === PET PEN ===
     PetPen = false,
