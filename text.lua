@@ -14,8 +14,7 @@ getgenv().VO_CONFIG = {
     PrioritizePet = "2D Kitty",
 
     -- === EVENT ===
-    AutoFish = true,
-    PrioritizeCraft = "Tealwood Monster Bait",  -- nil = auto | "Rainbow Trout" | "Tealwood Monster Bait"
+    AutoFish = false,
 
     
     -- === PET PEN ===
