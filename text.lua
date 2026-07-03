@@ -17,6 +17,8 @@ getgenv().VO_CONFIG = {
     AutoFish = false,
     PrioritizeCraft = "Tealwood Monster Bait",  -- "Rainbow Trout" | "Tealwood Monster Bait"
     BuyIrishSetter = false,
+    AutoSkydive = true,      -- [RENDERS MAIN MAP] Complete Skydive Minigame
+    AutoStormSkydive = false, -- [RENDERS MAIN MAP] Complete storm challenge + buy all Storm Condors
     
     -- === PET PEN ===
     PetPen = false,
