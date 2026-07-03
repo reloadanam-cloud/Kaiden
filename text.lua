@@ -46,7 +46,7 @@ getgenv().VO_CONFIG = {
 
     -- === BOXES ===
     BuyBoxes = true,
-    BoxName = "Rubber Ducky Box",   -- Name of the box to buy/open
+    BoxName = "Oakee Box",   -- Name of the box to buy/open
     OpenBoxes = true,
 
     -- === LURE ===
