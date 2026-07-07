@@ -1,7 +1,7 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cLVQyoBKvelhImg4hwbXB0mJzONvWHyFhMpAyqycNxI",
-    DeviceName = "Oakee",
+    DeviceName = "RIVER OTHER",
 
     -- === MAIN FARM (choose one mode) ===
     PotFarm = false,
@@ -10,7 +10,7 @@ getgenv().VO_CONFIG = {
     KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
     KeepPetFarm = true, -- If true, will switch back when PetFarmList targets appear
     EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
-    PetFarmList = {"Alicorn", "Ancient Dragon", "Dragonfly", "Oakee Wizard", "Purrowl", "Oakee Knight", "Stygian Owl", "Tealwood Monster", "Unicorn Ducky"}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
+    PetFarmList = {"Alicorn", "Ancient Dragon", "Dragonfly", "Oakee Wizard", "Purrowl", "Oakee Knight", "Stygian Owl", "Tealwood Monster", "Unicorn Ducky", "River Otter"}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
     PrioritizePet = "2D Kitty",
 
     -- === EVENT ===
@@ -36,18 +36,18 @@ getgenv().VO_CONFIG = {
 
     -- === AGE PETS ===
     AgePets = true,
-    AgePetsNames = {"Alicorn", "Ancient Dragon", "Dragonfly", "Oakee Wizard", "Purrowl", "Oakee Knight", "Stygian Owl", "Tealwood Monster", "Unicorn Ducky"},
+    AgePetsNames = {"Alicorn", "Ancient Dragon", "Dragonfly", "Oakee Wizard", "Purrowl", "Oakee Knight", "Stygian Owl", "Tealwood Monster", "Unicorn Ducky", "River Otter"},
     AgePetsTypes = {"ALL"},  -- "Normal", "Neon", "ALL"
 
     -- === AUTO FUSE ===
     AutoFuse = true,
 
     -- === BUY PETS ===
-    BuyPets = false,
-    BuyPetName = {"Pet Name", "Pet Name 2"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPets = true,
+    BuyPetName = {"River Otter"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===
-    BuyBoxes = true,
+    BuyBoxes = false,
     BoxName = "Oakee Box",   -- Name of the box to buy/open
     OpenBoxes = true,
 
