@@ -14,11 +14,12 @@ getgenv().VO_CONFIG = {
     PrioritizePet = "2D Kitty",
 
     -- === EVENT ===
-    AutoFish = false,
-    PrioritizeCraft = "Tealwood Monster Bait",  -- "Rainbow Trout" | "Tealwood Monster Bait"
+    PrioritizeCraft = "Tealwood Monster Bait",  -- "Rainbow Trout" | "Tealwood Monster Bait" | nil (auto). AutoFish always runs.
+    Craft = false,             -- If false, collect karps only — skip purchases (Tealwood bait / Rainbow Trout)
+    AutoSellFish = true,     -- Sell all karps each pass; disables tealwood/rainbow purchases
     BuyIrishSetter = false,
     AutoSkydive = false,      -- [RENDERS MAIN MAP] Complete Skydive Minigame
-    AutoStormSkydive = false, -- [RENDERS MAIN MAP] Complete storm challenge + buy all Storm Condors
+    AutoStormSkydive = false, -- [DOESNT RENDER MAIN MAP] Complete storm challenge + buy all Storm Condors
     
     -- === PET PEN ===
     PetPen = false,
