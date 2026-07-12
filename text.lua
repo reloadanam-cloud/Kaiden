@@ -1,7 +1,7 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "cLVQyoBKvelhImg4hwbXB0mJzONvWHyFhMpAyqycNxI",
-    DeviceName = "TEST BUG",
+    DeviceName = "OTHER",
 
     -- === MAIN FARM (choose one mode) ===
     PotFarm = false,
@@ -45,7 +45,7 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Ruddy Duck"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPetName = {"River Otter"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===
     BuyBoxes = false,
