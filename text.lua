@@ -10,7 +10,7 @@ getgenv().VO_CONFIG = {
     KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
     KeepPetFarm = true, -- If true, will switch back when PetFarmList targets appear
     EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
-    PetFarmList = {"River Otter", "Ruddy Duck", "Stygian Owl"}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
+    PetFarmList = {"River Otter", "Ruddy Duck", "Forest Sprite"}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
     PrioritizePet = "2D Kitty",
 
     -- === EVENT ===
@@ -37,7 +37,7 @@ getgenv().VO_CONFIG = {
 
     -- === AGE PETS ===
     AgePets = true,
-    AgePetsNames = {"River Otter", "Ruddy Duck", "Forest Sprite", "Stygian Owl"},
+    AgePetsNames = {"River Otter", "Ruddy Duck", "Forest Sprite"},
     AgePetsTypes = {"ALL"},  -- "Normal", "Neon", "ALL"
 
     -- === AUTO FUSE ===
