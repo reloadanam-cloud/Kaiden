@@ -4,9 +4,9 @@ getgenv().VO_CONFIG = {
     DeviceName = "KAIDEN",
 
     -- === MAIN FARM (choose one mode) ===
-    PotFarm = false,
+    PotFarm = true,
     EggFarm = false,
-    PetFarm = true, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
+    PetFarm = false, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
     KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
     KeepPetFarm = true, -- If true, will switch back when PetFarmList targets appear
     EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
