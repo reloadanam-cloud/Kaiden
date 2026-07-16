@@ -44,7 +44,7 @@ getgenv().VO_CONFIG = {
     AutoFuse = true,
 
     -- === BUY PETS ===
-    BuyPets = true,
+    BuyPets = false,
     BuyPetName = {"River Otter"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===
