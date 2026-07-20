@@ -45,7 +45,7 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"River Otter"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPetName = {"River Otter", "Irish Setter"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===
     BuyBoxes = false,
