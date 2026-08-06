@@ -105,7 +105,7 @@ getgenv().UserConfig = {
 	["Webhook Gear URL"] = "https://discord.com/api/webhooks/1534920449086066932/dybX1mDfT1Iw27IR1yt0ygXMPy5SRmd3UstkygVf-Z5jjV99-6NEZG2q2Omwu5vhUBU8",
 	["Webhook Gear Name"] = {"Super Syrup Sprinkler", "Super Syrup Watering Can", "Super Magic Mail"},
     ["Webhook Note"] = "KAIDEN",
-    ["Discord ID"] = "212696031157026816",
+    ["Discord ID"] = "1079411947348439200",
 	-- Mail
     ["Mail To Username"] = {"xKaiidenn"},
     ["Items To Mail"] = {
