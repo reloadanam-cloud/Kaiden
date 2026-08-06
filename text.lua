@@ -96,4 +96,61 @@ getgenv().UserConfig = {
     },
 	-- WH Pet
     ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1534920378466435233/WzrWvxPNXF6cnrtdYNjbB4x12IqiSCdb3SJnBG-nXMDkes2fmaB9e0TAx23ak89jm8XH",
-    ["Webhook Pet Name"] = 
+    ["Webhook Pet Name"] = {"Swan", "Shadow Dragon"},
+    ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
+	-- WH Seed
+	["Webhook Seed URL"] = "https://discord.com/api/webhooks/1534920154159251476/SOjubZTwtmhvpeBYSyirutS3MYcgR2BwKDGmgjzF8-aseb3R_NNLI9NGhzf7tMVzfqF8",
+    ["Webhook Seed Name"] = {"Maple Venom Spitter","Conifer Cone","Atlantic Giant Pumpkin","Amber Cranberry"},
+	-- WH Gear
+	["Webhook Gear URL"] = "https://discord.com/api/webhooks/1534920449086066932/dybX1mDfT1Iw27IR1yt0ygXMPy5SRmd3UstkygVf-Z5jjV99-6NEZG2q2Omwu5vhUBU8",
+	["Webhook Gear Name"] = {"Super Syrup Sprinkler", "Super Syrup Watering Can", "Super Magic Mail"},
+    ["Webhook Note"] = "KAIDEN",
+    ["Discord ID"] = "212696031157026816",
+	-- Mail
+    ["Mail To Username"] = {"xKaiidenn"},
+    ["Items To Mail"] = {
+		["Pet"] = {
+             ["Squirrel"] = {Huge = 1, Rainbow = 1},
+             ["Fox"] = {Big = 1, Huge = 1, Rainbow = 1},
+             ["Shadow Dragon"] = 1,
+        },
+        ["Seed"] = {
+             ["Maple Venom Spitter"] = 1,
+             ["Atlantic Giant Pumpkin"] = 1,
+             ["Conifer Cone"] = 1,
+             ["Amber Cranberry"] = 1,
+             ["Rainbow"] = 2,
+             ["Romanesco"] = 1,
+        },
+        ["Gear"] = {
+             ["Super Syrup Watering Can"] = 2,
+             ["Super Syrup Sprinkler"] = 2,
+             ["Super Magic Mail"] = 1,
+        },
+		["Other"] = {},
+    },
+    ["Claim Mail"] = true,
+	-- Advanced
+    ["Auto Plant"] = true,
+    ["Limit Auto Plant"] = 800,
+    ["Blacklist Seed"] = {
+        "Maple Strawberry", "Maple Blueberry", "Maple Tomato", "Maple Apple", "Maple Corn",
+        "Maple Cactus", "Maple Pineapple", "Maple Green Bean", "Maple Banana",
+        "Maple Grape", "Maple Coconut", "Maple Mango",
+        "Amber Cranberry", "Atlantic Giant Pumpkin"
+    },
+    ["Blacklist Shovel"] = {
+        "Maple Carrot", "Maple Tulip", "Maple Bamboo", "Maple Mushroom",
+        "Maple Dragon Fruit", "Maple Acorn", "Maple Cherry", "Maple Sunflower",
+        "Maple Venus Fly Trap", "Maple Pomegranate", "Maple Poison Apple",
+        "Maple Venom Spitter", "Conifer Cone", "Amber Cranberry",
+        "Atlantic Giant Pumpkin"
+    },
+    ["Shovel Plant Once"] = {
+        "Maple Strawberry", "Maple Blueberry", "Maple Tomato", "Maple Apple", "Maple Corn",
+        "Maple Cactus", "Maple Pineapple", "Maple Green Bean", "Maple Banana",
+        "Maple Grape", "Maple Coconut", "Maple Mango"
+    },
+    ["World"] = "Fall Harvest"
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/081b6484489dff091ae98ca65051f94b.lua"))()
