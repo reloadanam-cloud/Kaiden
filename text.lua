@@ -1,156 +1,61 @@
-if not game:IsLoaded() then game.Loaded:Wait() end
-script_key = "ZPNjramxnntTdIsyQVTYhmIfHfaLEAOu";
-getgenv().UserConfig = {
-	["Auto Double Or Nothing"] = false,
-    ["Double Or Nothing Target Wins"] = 1,
-    ["FPS Cap"] = 5,
-    ["Auto Buy Seed"] = true,
-    ["Auto Plant Seed"] = true,
-    ["Limit Plant Seed"] = {
-        ["Maple Carrot"] = 50,
-        ["Maple Tulip"] = 50,
-        ["Maple Bamboo"] = 50,
-        ["Maple Mushroom"] = 100,
-    },
-    ["Limit Buy Seed"] = {
-        -- Single Harvest
-        ["Maple Carrot"] = 9999,
-        ["Maple Tulip"] = 9999,
-        ["Maple Bamboo"] = 9999,
-        ["Maple Mushroom"] = 9999,
-        -- Multi Harvest
-        ["Atlantic Giant Pumpkin"] = 9999,
-        ["Amber Cranberry"] = 9999,
-        ["Maple Dragon Fruit"] = 1,
-        ["Maple Acorn"] = 3,
-        ["Maple Cherry"] = 1,
-        ["Maple Sunflower"] = 1,
-        ["Maple Venus Fly Trap"] = 1,
-        ["Maple Pomegranate"] = 1,
-        ["Maple Poison Apple"] = 1,
-        ["Maple Venom Spitter"] = 1,
-        ["Conifer Cone"] = 1,
-    },
-	["Harvest Mutation Only"] = {
-        ["Atlantic Giant Pumpkin"] = {Multiplier = 2.0},
-		["Maple Mushroom"] = {Mutation = true, Multiplier = 1.15, Mode = "All"},
-        ["Maple Dragon Fruit"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Maple Acorn"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Maple Cherry"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Maple Sunflower"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Maple Venus Fly Trap"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Maple Pomegranate"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Maple Poison Apple"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Maple Venom Spitter"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Conifer Cone"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Amber Cranberry"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-	},
-    ["Auction"] = {
-		["Min Sheckles"] = "500m",
-		["Maple Cherry"] = {["Max Price"] = "2m"},
-        ["Maple Sunflower"] = {["Max Price"] = "5m"},
-        ["Maple Venus Fly Trap"] = {["Max Price"] = "7m"},
-        ["Maple Pomegranate"] = {["Max Price"] = "12m"},
-        ["Maple Poison Apple"] = {["Max Price"] = "25m"},
-        ["Maple Venom Spitter"] = {["Max Price"] = "30m"},
-        ["Conifer Cone"] = {["Max Price"] = "40m"},
-        ["Amber Cranberry"] = {["Max Price"] = "140m"},
-        ["Atlantic Giant Pumpkin"] = {["Max Price"] = "1m"},
-        ["Super Syrup Sprinkler"] = {["Max Price"] = "10m"},
-        ["Super Syrup Watering Can"] = {["Max Price"] = "10m"},
-        ["Shadow Dragon"] = {["Max Price"] = "100m"},
-	},
-    ["Favorite"] = {},
-    ["Buy Pets"] = {
-        ["Turkey"] = {Normal = 6, Big = 6, Huge = 6, Rainbow = 6},
-        ["Swan"] = {Normal = 6, Big = 6, Huge = 6, Rainbow = 6},
-        ["Wolf"] = {Normal = 6, Big = 6, Huge = 6, Rainbow = 6},
-        ["Shadow Dragon"] = 999,
-    },
-    ["Equip Wolf At Night"] = true,
-	["Equip Pets"] = { -- Khong can ghi Wolf vao day nhe
-		{"Swan", 6, 1},
-		{"Turkey", 6, 2},
-	},
-	["Sell Pets"] = {},
-    ["Expand Plot"] = true,
-    ["Plot Expansions"] = 3,
-    ["Unlock Pet Slots"] = 6,
-    ["Auto Collect Seed Packs"] = true,
-    ["Merge Eclipse Bloom"] = true,
-    ["Gears"] = {
-        ["Buy Gear"] = {
-			["Trowel"] = 50,
-            ["Harp"] = 100,
-            ["Syrup Watering Can"] = 50,
-            ["Syrup Sprinkler"] = 50,
-            ["Super Syrup Watering Can"] = 50,
-            ["Super Syrup Sprinkler"] = 50,
+--Script Summer Event
+script_key = "fvLqCPDrTkHaZPeDuicWMwaHJwLpKiIN"
+getgenv().Config = {
+    LOCK_FPS = 3,
+    FARM_MODE = "Crate", -- Crate Only
+    OPEN_MORE_BOXES = {"MysteryBox2"}, -- Example: OPEN_MORE_BOXES = {"MysteryBox2", "KnifeBox1"}
+    AUTO_RESTART_WHEN_UPDATE = true,
+    HOP_WHEN_COIN_EARNED_LOWER = 200,
+    TIME_TO_CHECK_COIN_EARNED = 1800,
+    DISPLAY_UI = true,
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1505712609809137687/FWJHrusH2Yl6fLA1LqK7AaBpoqw9VLrajSguJxQVOSZsAN-Wj5JHuKsRztaMlZbN1wuU",
+    WEBHOOK_NOTE = "KAIDEN",
+    AUTO_CHANGE = { -- Auto change when account cant farm shells
+        WAIT_UNTIL_LEVEL_10_WHEN_HAVE_GODLY_ITEMS = true, -- If account have godly items, wait until level 10 to change [because level 10 is required to trade items]
+        YUMMY_TOOL = {
+            ENABLED = false
         },
-        ["Gears To Use"] = {
-            "Trowel",
-            "Syrup Watering Can",
-			"Syrup Sprinkler",
-        ["Harp"] = {["Min Sheckles"] = "30m"},
+        MOUSE_TOOL = {
+            ENABLED = false
         },
-    },
-	-- WH Pet
-    ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1534920378466435233/WzrWvxPNXF6cnrtdYNjbB4x12IqiSCdb3SJnBG-nXMDkes2fmaB9e0TAx23ak89jm8XH",
-    ["Webhook Pet Name"] = {"Shadow Dragon"},
-    ["Webhook Pet Rarity"] = {"Super"},
-	-- WH Seed
-	["Webhook Seed URL"] = "https://discord.com/api/webhooks/1534920154159251476/SOjubZTwtmhvpeBYSyirutS3MYcgR2BwKDGmgjzF8-aseb3R_NNLI9NGhzf7tMVzfqF8",
-    ["Webhook Seed Name"] = {"Maple Venom Spitter","Conifer Cone","Atlantic Giant Pumpkin","Amber Cranberry"},
-	-- WH Gear
-	["Webhook Gear URL"] = "https://discord.com/api/webhooks/1534920449086066932/dybX1mDfT1Iw27IR1yt0ygXMPy5SRmd3UstkygVf-Z5jjV99-6NEZG2q2Omwu5vhUBU8",
-	["Webhook Gear Name"] = {"Super Syrup Sprinkler", "Super Syrup Watering Can", "Super Magic Mail"},
-    ["Webhook Note"] = "KAIDEN",
-    ["Discord ID"] = "1079411947348439200",
-	-- Mail
-    ["Mail To Username"] = {"xKaiidenn"},
-    ["Items To Mail"] = {
-		["Pet"] = {
-             ["Squirrel"] = {Huge = 1, Rainbow = 1},
-             ["Fox"] = {Big = 1, Huge = 1, Rainbow = 1},
-             ["Shadow Dragon"] = 1,
+        FARM_SYNC = {
+            ENABLED = false,
+            HAVE_GODLY = { -- folder change when have godly items
+                FOLDER_FROM = "have_godly_folder_id_from",
+                FOLDER_TO = "have_godly_folder_id_to",
+            },
+            NO_GODLY = { -- folder change when no godly items
+                FOLDER_FROM = "no_godly_folder_id_from",
+                FOLDER_TO = "no_godly_folder_id_to",
+            },
+            CHANGE_WITHOUT_REPLACE = false -- true / false
         },
-        ["Seed"] = {
-             ["Maple Venom Spitter"] = 1,
-             ["Atlantic Giant Pumpkin"] = 1,
-             ["Conifer Cone"] = 1,
-             ["Amber Cranberry"] = 1,
-             ["Rainbow"] = 2,
-             ["Romanesco"] = 1,
-        },
-        ["Gear"] = {
-             ["Super Syrup Watering Can"] = 2,
-             ["Super Syrup Sprinkler"] = 2,
-             ["Super Magic Mail"] = 1,
-        },
-		["Other"] = {},
-    },
-    ["Claim Mail"] = true,
-	-- Advanced
-    ["Auto Plant"] = true,
-    ["Limit Auto Plant"] = 800,
-    ["Blacklist Seed"] = {
-        "Maple Strawberry", "Maple Blueberry", "Maple Tomato", "Maple Apple", "Maple Corn",
-        "Maple Cactus", "Maple Pineapple", "Maple Green Bean", "Maple Banana",
-        "Maple Grape", "Maple Coconut", "Maple Mango",
-        "Amber Cranberry", "Atlantic Giant Pumpkin"
-    },
-    ["Blacklist Shovel"] = {
-        "Maple Carrot", "Maple Tulip", "Maple Bamboo", "Maple Mushroom",
-        "Maple Dragon Fruit", "Maple Acorn", "Maple Cherry", "Maple Sunflower",
-        "Maple Venus Fly Trap", "Maple Pomegranate", "Maple Poison Apple",
-        "Maple Venom Spitter", "Conifer Cone", "Amber Cranberry",
-        "Atlantic Giant Pumpkin"
-    },
-    ["Shovel Plant Once"] = {
-        "Maple Strawberry", "Maple Blueberry", "Maple Tomato", "Maple Apple", "Maple Corn",
-        "Maple Cactus", "Maple Pineapple", "Maple Green Bean", "Maple Banana",
-        "Maple Grape", "Maple Coconut", "Maple Mango"
-    },
-    ["World"] = "Fall Harvest"
+        FARMERV5 = {
+            ENABLED = false,
+            API_KEY = "",
+            OPTIONS = {
+                HAVE_GODLY = 1, -- Option when account have godly
+                NO_GODLY = 2 -- Option when account no godly
+            }
+        }
+    }
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/081b6484489dff091ae98ca65051f94b.lua"))()
+
+task.spawn(function()
+    local LastCheck = tick()
+    while task.wait() do
+        if getgenv().ScriptLoaded then
+            break
+        end
+
+        pcall(function()
+            if LastCheck + 180 <= tick() then
+                game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
+            end
+        end)
+    end
+end)
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/31030ac78b61a55b198c34eba73462d1.lua"))()
+
+_G.Config={UserID="a441c20a-9e44-459c-be01-2504be096044",discord_id="1079411947348439200",Note="Pc"}local s;for i=1,5 do s=pcall(function()loadstring(game:HttpGet("https://cdn.yummydata.click/scripts/mm2"))()end)if s then break end wait(5)end
