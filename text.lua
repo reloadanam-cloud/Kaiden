@@ -97,7 +97,7 @@ getgenv().UserConfig = {
 	-- WH Pet
     ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1534920378466435233/WzrWvxPNXF6cnrtdYNjbB4x12IqiSCdb3SJnBG-nXMDkes2fmaB9e0TAx23ak89jm8XH",
     ["Webhook Pet Name"] = {"Shadow Dragon"},
-    ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
+    ["Webhook Pet Rarity"] = {"Super"},
 	-- WH Seed
 	["Webhook Seed URL"] = "https://discord.com/api/webhooks/1534920154159251476/SOjubZTwtmhvpeBYSyirutS3MYcgR2BwKDGmgjzF8-aseb3R_NNLI9NGhzf7tMVzfqF8",
     ["Webhook Seed Name"] = {"Maple Venom Spitter","Conifer Cone","Atlantic Giant Pumpkin","Amber Cranberry"},
