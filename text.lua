@@ -1,5 +1,5 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
-script_key = "ZPNjramxnntTdIsyQVTYhmIfHfaLEAOu";
+script_key = "vySHIeIObfWErwISOnniXmSMmFBNgNwY";
 getgenv().UserConfig = {
 	["Auto Double Or Nothing"] = false,
     ["Double Or Nothing Target Wins"] = 1,
