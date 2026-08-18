@@ -90,7 +90,7 @@ ReceiverUsernames = {
     TransferAccount = "",
 
     -- === DISCORD WEBHOOK ===
-    WebhookEnabled = true,
+    WebhookEnabled = false,
     WebhookURL = "",
     WebhookPets = {
         "Dragonfruit Fox",
