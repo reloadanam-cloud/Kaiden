@@ -10,7 +10,7 @@ getgenv().VO_CONFIG = {
     KeepEggFarm = false,
     KeepPetFarm = true,
     EggName = {"Egg Name"},
-    PetFarmList = {"Black Tiger", "Kakapo"},
+    PetFarmList = {"Kakapo", "Black Tiger"},
     PrioritizePet = "2D Kitty",
 
     -- === PET PEN ===
@@ -18,7 +18,7 @@ getgenv().VO_CONFIG = {
     CustomPenEggs = {"Endangered Egg", "Pet Egg", "Cracked Egg", "Starter Egg"},
     CustomPenPets = {
         "Abyssinian Cat", "Badger", "Black Rhino",
-        "Black-Footed Ferret", "Blue Whale", "Corgi", "Black Tiger", "Kakapo",
+        "Black-Footed Ferret", "Blue Whale", "Corgi",
         "Ginger Cat","Grinmoire", "Mexican Wolf",
         "Oakee Knight", "Ocelot", "Orangutan", "Orca",
         "Pangolin", "Parakeet", "Pomeranian", "Ribbon Seal",
@@ -41,15 +41,6 @@ getgenv().VO_CONFIG = {
         "Tealwood Monster",
         "Oakee Wizard", 
         "General Sheepdog"
-        "Alicorn",
-        "Ancient Dragon",
-        "Dragonfly",
-        "Purrowl",
-        "Stygian Owl",
-        "Glyptodon Ducky",
-        "Ruddy Duck",
-        "Milk Choccybunny",
-        "Forest Sprite"
     },
     ReleaseTypes = {"Neon", "Mega"},
     ReleaseRarities = {},
@@ -61,10 +52,9 @@ getgenv().VO_CONFIG = {
         "Abyssinian Cat", "Badger", "Black Rhino",
         "Black-Footed Ferret", "Blue Whale", "Corgi",
         "Ginger Cat","Grinmoire", "Mexican Wolf",
-        "Oakee Knight", "Ocelot", "Orangutan", "Orca", "Black Tiger", "Kakapo",
+        "Oakee Knight", "Ocelot", "Orangutan", "Orca",
         "Pangolin", "Parakeet", "Pomeranian", "Ribbon Seal",
-        "River Otter", "Robot", "Sea Turtle", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra",
-        "Stygian Owl", "Glyptodon Ducky", "Milk Choccybunny", "Ruddy Duck", "Rubber Ducky", "Oakee", "Purrowl"
+        "River Otter", "Robot", "Sea Turtle", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra"
     },
     AgePetsTypes = {"ALL"},
 
@@ -87,7 +77,6 @@ getgenv().VO_CONFIG = {
     -- === AUTO TRADE ===
     AutoTrade = false,
 ReceiverUsernames = {
-"",
 
 },
     TradeItemList = {
@@ -101,7 +90,7 @@ ReceiverUsernames = {
     TransferAccount = "",
 
     -- === DISCORD WEBHOOK ===
-    WebhookEnabled = false,
+    WebhookEnabled = true,
     WebhookURL = "",
     WebhookPets = {
         "Dragonfruit Fox",
