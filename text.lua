@@ -49,7 +49,7 @@ getgenv().VO_CONFIG = {
         "Glyptodon Ducky",
         "Ruddy Duck",
         "Milk Choccybunny",
-        "Forest Sprite",
+        "Forest Sprite"
     },
     ReleaseTypes = {"Neon", "Mega"},
     ReleaseRarities = {},
@@ -63,7 +63,7 @@ getgenv().VO_CONFIG = {
         "Ginger Cat","Grinmoire", "Mexican Wolf",
         "Oakee Knight", "Ocelot", "Orangutan", "Orca", "Black Tiger", "Kakapo",
         "Pangolin", "Parakeet", "Pomeranian", "Ribbon Seal",
-        "River Otter", "Robot", "Sea Turtle", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra"
+        "River Otter", "Robot", "Sea Turtle", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra",
         "Stygian Owl", "Glyptodon Ducky", "Milk Choccybunny", "Ruddy Duck", "Rubber Ducky", "Oakee", "Purrowl"
     },
     AgePetsTypes = {"ALL"},
