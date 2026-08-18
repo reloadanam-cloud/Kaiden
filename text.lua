@@ -1,156 +1,74 @@
-if not game:IsLoaded() then game.Loaded:Wait() end
-script_key = "vySHIeIObfWErwISOnniXmSMmFBNgNwY";
-getgenv().UserConfig = {
-	["Auto Double Or Nothing"] = false,
-    ["Double Or Nothing Target Wins"] = 1,
-    ["FPS Cap"] = 5,
-    ["Auto Buy Seed"] = true,
-    ["Auto Plant Seed"] = true,
-    ["Limit Plant Seed"] = {
-        ["Maple Carrot"] = 50,
-        ["Maple Tulip"] = 50,
-        ["Maple Bamboo"] = 50,
-        ["Maple Mushroom"] = 100,
-    },
-    ["Limit Buy Seed"] = {
-        -- Single Harvest
-        ["Maple Carrot"] = 9999,
-        ["Maple Tulip"] = 9999,
-        ["Maple Bamboo"] = 9999,
-        ["Maple Mushroom"] = 9999,
-        -- Multi Harvest
-        ["Atlantic Giant Pumpkin"] = 9999,
-        ["Amber Cranberry"] = 9999,
-        ["Maple Dragon Fruit"] = 1,
-        ["Maple Acorn"] = 3,
-        ["Maple Cherry"] = 1,
-        ["Maple Sunflower"] = 1,
-        ["Maple Venus Fly Trap"] = 1,
-        ["Maple Pomegranate"] = 1,
-        ["Maple Poison Apple"] = 1,
-        ["Maple Venom Spitter"] = 1,
-        ["Conifer Cone"] = 1,
-    },
-	["Harvest Mutation Only"] = {
-        ["Atlantic Giant Pumpkin"] = {Multiplier = 2.0},
-		["Maple Mushroom"] = {Mutation = true, Multiplier = 1.15, Mode = "All"},
-        ["Maple Dragon Fruit"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Maple Acorn"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Maple Cherry"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Maple Sunflower"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Maple Venus Fly Trap"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Maple Pomegranate"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Maple Poison Apple"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Maple Venom Spitter"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Conifer Cone"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-        ["Amber Cranberry"] = {Mutation = true, Multiplier = 2.0, Mode = "All"},
-	},
-    ["Auction"] = {
-		["Min Sheckles"] = "500m",
-		["Maple Cherry"] = {["Max Price"] = "2m"},
-        ["Maple Sunflower"] = {["Max Price"] = "5m"},
-        ["Maple Venus Fly Trap"] = {["Max Price"] = "7m"},
-        ["Maple Pomegranate"] = {["Max Price"] = "12m"},
-        ["Maple Poison Apple"] = {["Max Price"] = "25m"},
-        ["Maple Venom Spitter"] = {["Max Price"] = "30m"},
-        ["Conifer Cone"] = {["Max Price"] = "40m"},
-        ["Amber Cranberry"] = {["Max Price"] = "140m"},
-        ["Atlantic Giant Pumpkin"] = {["Max Price"] = "1m"},
-        ["Super Syrup Sprinkler"] = {["Max Price"] = "10m"},
-        ["Super Syrup Watering Can"] = {["Max Price"] = "10m"},
-        ["Shadow Dragon"] = {["Max Price"] = "100m"},
-	},
-    ["Favorite"] = {},
-    ["Buy Pets"] = {
-        ["Turkey"] = {Normal = 6, Big = 6, Huge = 6, Rainbow = 6},
-        ["Swan"] = {Normal = 6, Big = 6, Huge = 6, Rainbow = 6},
-        ["Wolf"] = {Normal = 6, Big = 6, Huge = 6, Rainbow = 6},
-        ["Shadow Dragon"] = 999,
-    },
-    ["Equip Wolf At Night"] = true,
-	["Equip Pets"] = { -- Khong can ghi Wolf vao day nhe
-		{"Swan", 6, 1},
-		{"Turkey", 6, 2},
-	},
-	["Sell Pets"] = {},
-    ["Expand Plot"] = true,
-    ["Plot Expansions"] = 3,
-    ["Unlock Pet Slots"] = 6,
-    ["Auto Collect Seed Packs"] = true,
-    ["Merge Eclipse Bloom"] = true,
-    ["Gears"] = {
-        ["Buy Gear"] = {
-			["Trowel"] = 50,
-            ["Harp"] = 100,
-            ["Syrup Watering Can"] = 50,
-            ["Syrup Sprinkler"] = 50,
-            ["Super Syrup Watering Can"] = 50,
-            ["Super Syrup Sprinkler"] = 50,
-        },
-        ["Gears To Use"] = {
-            "Trowel",
-            "Syrup Watering Can",
-			"Syrup Sprinkler",
-        ["Harp"] = {["Min Sheckles"] = "30m"},
-        },
-    },
-	-- WH Pet
-    ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1534920378466435233/WzrWvxPNXF6cnrtdYNjbB4x12IqiSCdb3SJnBG-nXMDkes2fmaB9e0TAx23ak89jm8XH",
-    ["Webhook Pet Name"] = {"Shadow Dragon"},
-    ["Webhook Pet Rarity"] = {"Super"},
-	-- WH Seed
-	["Webhook Seed URL"] = "https://discord.com/api/webhooks/1534920154159251476/SOjubZTwtmhvpeBYSyirutS3MYcgR2BwKDGmgjzF8-aseb3R_NNLI9NGhzf7tMVzfqF8",
-    ["Webhook Seed Name"] = {"Maple Venom Spitter","Conifer Cone","Atlantic Giant Pumpkin","Amber Cranberry"},
-	-- WH Gear
-	["Webhook Gear URL"] = "https://discord.com/api/webhooks/1534920449086066932/dybX1mDfT1Iw27IR1yt0ygXMPy5SRmd3UstkygVf-Z5jjV99-6NEZG2q2Omwu5vhUBU8",
-	["Webhook Gear Name"] = {"Super Syrup Sprinkler", "Super Syrup Watering Can", "Super Magic Mail"},
-    ["Webhook Note"] = "KAIDEN",
-    ["Discord ID"] = "1079411947348439200",
-	-- Mail
-    ["Mail To Username"] = {"xkaiden560", "xkaiden561"},
-    ["Items To Mail"] = {
-		["Pet"] = {
-             ["Squirrel"] = {Huge = 1, Rainbow = 1},
-             ["Fox"] = {Big = 1, Huge = 1, Rainbow = 1},
-             ["Shadow Dragon"] = 1,
-        },
-        ["Seed"] = {
-             ["Maple Venom Spitter"] = 1,
-             ["Atlantic Giant Pumpkin"] = 1,
-             ["Conifer Cone"] = 1,
-             ["Amber Cranberry"] = 1,
-             ["Rainbow"] = 2,
-             ["Romanesco"] = 1,
-        },
-        ["Gear"] = {
-             ["Super Syrup Watering Can"] = 2,
-             ["Super Syrup Sprinkler"] = 2,
-             ["Super Magic Mail"] = 1,
-        },
-		["Other"] = {},
-    },
-    ["Claim Mail"] = true,
-	-- Advanced
-    ["Auto Plant"] = true,
-    ["Limit Auto Plant"] = 800,
-    ["Blacklist Seed"] = {
-        "Maple Strawberry", "Maple Blueberry", "Maple Tomato", "Maple Apple", "Maple Corn",
-        "Maple Cactus", "Maple Pineapple", "Maple Green Bean", "Maple Banana",
-        "Maple Grape", "Maple Coconut", "Maple Mango",
-        "Amber Cranberry", "Atlantic Giant Pumpkin"
-    },
-    ["Blacklist Shovel"] = {
-        "Maple Carrot", "Maple Tulip", "Maple Bamboo", "Maple Mushroom",
-        "Maple Dragon Fruit", "Maple Acorn", "Maple Cherry", "Maple Sunflower",
-        "Maple Venus Fly Trap", "Maple Pomegranate", "Maple Poison Apple",
-        "Maple Venom Spitter", "Conifer Cone", "Amber Cranberry",
-        "Atlantic Giant Pumpkin"
-    },
-    ["Shovel Plant Once"] = {
-        "Maple Strawberry", "Maple Blueberry", "Maple Tomato", "Maple Apple", "Maple Corn",
-        "Maple Cactus", "Maple Pineapple", "Maple Green Bean", "Maple Banana",
-        "Maple Grape", "Maple Coconut", "Maple Mango"
-    },
-    ["World"] = "Fall Harvest"
+getgenv().VO_CONFIG = {
+    -- === HUB / AUTH ===
+    HubKey = "7YKD2efpZ4jYvJWBgNlZF2J-VUioU6YPGyj3wb70ugI",
+    DeviceName = "Kaiden",
+
+    -- === MAIN FARM (choose one mode) ===
+    PotFarm = true,
+    EggFarm = false,
+    PetFarm = false, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
+    KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
+    KeepPetFarm = false, -- If true, will switch back when PetFarmList targets appear
+    EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
+    PetFarmList = {"California Condor", "Galapagos Sea Lion", "Black Tiger", "Kakapo", "Black Rhino", "Mexican Wolf", "Black-Footed Ferret", "Pangolin"}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
+    PrioritizePet = "2D Kitty",
+
+    -- === EVENT ===
+    AutoBeeGame = false,       -- Bees Wagon 2026: hand in bouquets, plant/buy seeds, claim pass
+
+    -- === PET PEN ===
+    PetPen = true,
+    CustomPenEggs = {"Endangered Egg"},
+    CustomPenPets = {},
+    PrioritizePetPenTypes = {"Egg"},  -- "Egg", "Normal", "Neon" (empty = all)
+
+    -- === PET RELEASER ===
+    PetReleaser = true,
+    ReleasePets = {},       -- Whitelist: names to release (empty = all)
+    ExcludeReleasePets = {"Chihuahua", "Chestnut Glyptodon", "General Sheepdog", "River Otter", "Stygian Owl", "2026 Birthday Butterfly", "Sushi Penguin", "Frostbite Bear", "Purrowl", "Dragonfruit Fox", "Dango Penguins", "Silverback Gorilla", "Velocirooster", "2D Kitty",}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
+    ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)
+    ReleaseRarities = {"Common", "Uncommon", "Rare", "Ultra Rare", "Legendary"},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
+    ExcludeRarities = {},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
+
+    -- === AGE PETS ===
+    AgePets = false,
+    AgePetsNames = {"California Condor", "Galapagos Sea Lion", "Black Tiger", "Kakapo", "Black Rhino", "Mexican Wolf", "Black-Footed Ferret", "Pangolin"},
+    AgePetsTypes = {"Normal"},  -- "Normal", "Neon", "ALL"
+
+    -- === AUTO FUSE ===
+    AutoFuse = true,
+    AutoFuseBlacklist = {}, -- Pet names to never include in neon/mega fusion
+
+    -- === BUY PETS ===
+    BuyPets = true,
+    BuyPetName = {"Endangered Egg", "Crystal Egg"},  -- Loops in order, buys all of first pet then moves to next
+
+    -- === BOXES ===
+    BuyBoxes = false,
+    BoxName = {"Box Name"},   -- Boxes to buy when BuyBoxes is true
+    OpenBoxes = {"Box Name"}, -- Box names to open from inventory
+
+    -- === LURE ===
+    BaitName = "Bait Name",
+
+    -- === AUTO TRADE ===
+    AutoTrade = false,
+    ReceiverUsernames = {},
+    TradeItemList = {
+         pets = {"Dog","Neon Cat"}
+    }, -- Per category: { pets = {"Dog","Neon Cat"}, food = {}, toys = {}, ... } ? use "ALL" in a category to allow that whole category (pets still gated by TradePetType for bare names)
+    TradePetType = {"ALL"},       -- Only applies to pets: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG" ? not used for food/toys/etc.; inline prefixes on pet strings (e.g. "Mega Dog") bypass this
+
+    -- === CASH TRANSFER ===
+    CashTransfer = false,
+    TransferMethods = {"mannequin"},  -- Current Methods: "mannequin"
+    TransferAccount = "",
+
+    -- === DISCORD WEBHOOK ===
+    WebhookEnabled = false,
+    WebhookURL = "",
+    WebhookPets = {},  -- Pet names to send (empty = all)
+
+    ExtraOpti = false
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/081b6484489dff091ae98ca65051f94b.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"))()
