@@ -1,74 +1,109 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "7YKD2efpZ4jYvJWBgNlZF2J-VUioU6YPGyj3wb70ugI",
-    DeviceName = "GACOR",
+    DeviceName = "CRYSTALL",
 
     -- === MAIN FARM (choose one mode) ===
     PotFarm = true,
     EggFarm = false,
-    PetFarm = true, -- Third mode: farm pets from PetFarmList in order (natural task-aging)
-    KeepEggFarm = false, -- If true, will keep trying to hatch eggs even when no bucks
-    KeepPetFarm = true, -- If true, will switch back when PetFarmList targets appear
-    EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
-    PetFarmList = {"Kakapo", "Black Tiger"}, -- Ordered pet names: age all non-FG of first name, then second, etc.; fallback if none available
+    PetFarm = true,
+    KeepEggFarm = false,
+    KeepPetFarm = true,
+    EggName = {"Egg Name"},
+    PetFarmList = {"Oakee", "Black Tiger", "Kakapo", "Mexican Wolf", "Black Rhino", "Pangolin", "Black-Footed Ferret", "Abyssinian Cat", "Ocelot", "Orangutan", "Parakeet", "Zebra", "Badger", "Corgi", "Ginger Cat", "Gold Mahi Mahi", "Grinmoire", "Orca", "Pomeranian", "Ribbon Seal", "Robot", "Starfish", "Swordfish", "Toucan"},
     PrioritizePet = "2D Kitty",
-
-    -- === EVENT ===
-    AutoBeeGame = false,       -- Bees Wagon 2026: hand in bouquets, plant/buy seeds, claim pass
 
     -- === PET PEN ===
     PetPen = true,
     CustomPenEggs = {"Endangered Egg", "Pet Egg", "Cracked Egg", "Starter Egg"},
-    CustomPenPets = {"Abyssinian Cat", "Badger", "Black Rhino", "Black-Footed Ferret", "Blue Whale", "Corgi", "Ginger Cat","Grinmoire", "Mexican Wolf", "Ocelot", "Orangutan", "Orca", "Pangolin", "Parakeet", "Pomeranian", "Ribbon Seal", "Robot", "Sea Turtle", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra"},
-    PrioritizePetPenTypes = {"Egg"},  -- "Egg", "Normal", "Neon" (empty = all)
+    CustomPenPets = {
+        "Abyssinian Cat", "Badger", "Black Rhino",
+        "Black-Footed Ferret", "Corgi",
+        "Ginger Cat", "Grinmoire", "Mexican Wolf",
+        "Oakee Knight", "Ocelot", "Orangutan", "Orca",
+        "Pangolin", "Parakeet", "Pomeranian", "Ribbon Seal",
+        "River Otter", "Robot", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra", "Oakee"
+    },
+    PrioritizePetPenTypes = {"Egg"},
 
     -- === PET RELEASER ===
     PetReleaser = true,
-    ReleasePets = {},       -- Whitelist: names to release (empty = all)
-    ExcludeReleasePets = {"Chihuahua", "Chestnut Glyptodon", "General Sheepdog", "River Otter", "Stygian Owl", "2026 Birthday Butterfly", "Sushi Penguin", "Frostbite Bear", "Purrowl", "Dragonfruit Fox", "Dango Penguins", "Silverback Gorilla", "Velocirooster", "2D Kitty",}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
-    ReleaseTypes = {"Neon", "Mega"},      -- "Mega", "Neon", "Normal" (empty = all)
-    ReleaseRarities = {},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
-    ExcludeRarities = {},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
+    ReleasePets = {},
+    ExcludeReleasePets = {
+        "Frostbite Bear",
+        "Dragonfruit Fox",
+        "Dango Penguins",
+        "Silverback Gorilla",
+        "Sushi Penguin",
+        "Velocirooster",
+        "2D Kitty",
+        "Rainbow Trout",
+        "Tealwood Monster",
+        "Oakee Wizard", 
+        "General Sheepdog",
+        "Chihuahua"
+    },
+    ReleaseTypes = {"Neon", "Mega"},
+    ReleaseRarities = {},
+    ExcludeRarities = {},
 
     -- === AGE PETS ===
     AgePets = true,
-    AgePetsNames = {"Abyssinian Cat", "Badger", "Black Rhino", "Black-Footed Ferret", "Blue Whale", "Corgi", "Ginger Cat","Grinmoire", "Mexican Wolf", "Ocelot", "Orangutan", "Orca", "Pangolin", "Parakeet", "Pomeranian", "Ribbon Seal", "Robot", "Sea Turtle", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra"},
-    AgePetsTypes = {"ALL"},  -- "Normal", "Neon", "ALL"
+    AgePetsNames = {
+        "Abyssinian Cat", "Badger", "Black Rhino",
+        "Black-Footed Ferret", "Corgi",
+        "Ginger Cat", "Grinmoire", "Mexican Wolf",
+        "Oakee Knight", "Ocelot", "Orangutan", "Orca",
+        "Pangolin", "Parakeet", "Pomeranian", "Ribbon Seal",
+        "River Otter", "Robot", "Starfish", "Storm Condor", "Swordfish", "Toucan", "Zebra"
+    },
+    AgePetsTypes = {"ALL"},
 
     -- === AUTO FUSE ===
     AutoFuse = true,
-    AutoFuseBlacklist = {}, -- Pet names to never include in neon/mega fusion
+    AutoFuseBlacklist = {},
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Endangered Egg", "Crystal Egg"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPetName = {"Crystal Egg", "Tealwood Monster", "Endangered Egg"},
 
     -- === BOXES ===
     BuyBoxes = true,
-    BoxName = {"2D Box"},   -- Boxes to buy when BuyBoxes is true
-    OpenBoxes = {"2D Box"}, -- Box names to open from inventory
+    BoxName = "2D Box",
+    OpenBoxes = true,
 
     -- === LURE ===
     BaitName = "Bait Name",
 
     -- === AUTO TRADE ===
-    AutoTrade = false,
-    ReceiverUsernames = {},
+    AutoTrade = true,
+ReceiverUsernames = {
+},
     TradeItemList = {
-         pets = {"Dog","Neon Cat"}
-    }, -- Per category: { pets = {"Dog","Neon Cat"}, food = {}, toys = {}, ... } ? use "ALL" in a category to allow that whole category (pets still gated by TradePetType for bare names)
-    TradePetType = {"ALL"},       -- Only applies to pets: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG" ? not used for food/toys/etc.; inline prefixes on pet strings (e.g. "Mega Dog") bypass this
+        pets = {"Crystal Egg"}
+    },
+    TradePetType = {"ALL"},
 
     -- === CASH TRANSFER ===
     CashTransfer = false,
-    TransferMethods = {"mannequin"},  -- Current Methods: "mannequin"
+    TransferMethods = {"mannequin"},
     TransferAccount = "",
 
     -- === DISCORD WEBHOOK ===
-    WebhookEnabled = false,
-    WebhookURL = "",
-    WebhookPets = {},  -- Pet names to send (empty = all)
+    WebhookEnabled = true,
+    WebhookURL = "https://discord.com/api/webhooks/1537975041927417956/33uyyT03g6z5GR-_vP_94K6J9K6fvQbFs0Xd1TVDFIW_o_W2xB7KnSWs55NdF3CvyX9g",
+    WebhookPets = {
+        "Dragonfruit Fox",
+        "Dango Penguins",
+        "Silverback Gorilla",
+        "Velocirooster",
+        "Sushi Penguin",
+        "Tealwood Monster",
+        "Emberlight",
+        "Rainbow Trout"
+    },
 
     ExtraOpti = false
 }
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"))()
