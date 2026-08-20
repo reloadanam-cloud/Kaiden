@@ -44,9 +44,9 @@ getgenv().VO_CONFIG = {
     BuyPetName = {"Endangered Egg", "Crystal Egg"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === BOXES ===
-    BuyBoxes = false,
-    BoxName = {"Box Name"},   -- Boxes to buy when BuyBoxes is true
-    OpenBoxes = {"Box Name"}, -- Box names to open from inventory
+    BuyBoxes = true,
+    BoxName = {"2D Box"},   -- Boxes to buy when BuyBoxes is true
+    OpenBoxes = {"2D Box"}, -- Box names to open from inventory
 
     -- === LURE ===
     BaitName = "Bait Name",
