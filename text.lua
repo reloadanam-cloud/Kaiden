@@ -76,7 +76,7 @@ getgenv().VO_CONFIG = {
     BaitName = "Bait Name",
 
     -- === AUTO TRADE ===
-    AutoTrade = true,
+    AutoTrade = false,
 ReceiverUsernames = {
 },
     TradeItemList = {
@@ -90,7 +90,7 @@ ReceiverUsernames = {
     TransferAccount = "",
 
     -- === DISCORD WEBHOOK ===
-    WebhookEnabled = true,
+    WebhookEnabled = false,
     WebhookURL = "https://discord.com/api/webhooks/1537975041927417956/33uyyT03g6z5GR-_vP_94K6J9K6fvQbFs0Xd1TVDFIW_o_W2xB7KnSWs55NdF3CvyX9g",
     WebhookPets = {
         "Dragonfruit Fox",
