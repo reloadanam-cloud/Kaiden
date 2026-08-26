@@ -1,7 +1,7 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "7YKD2efpZ4jYvJWBgNlZF2J-VUioU6YPGyj3wb70ugI",
-    DeviceName = "CRYSTALL HATCH",
+    DeviceName = "CRYSTALL",
 
     -- === MAIN FARM (choose one mode) ===
     PotFarm = true,
@@ -15,7 +15,7 @@ getgenv().VO_CONFIG = {
 
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Endangered Egg", "Pet Egg", "Cracked Egg", "Starter Egg", "Admin Abuse Egg", "Crystal Egg"},
+    CustomPenEggs = {"Endangered Egg", "Pet Egg", "Cracked Egg", "Starter Egg", "Admin Abuse Egg"},
     CustomPenPets = {
         "Abyssinian Cat", "Badger", "Black Rhino",
         "Black-Footed Ferret", "Corgi",
