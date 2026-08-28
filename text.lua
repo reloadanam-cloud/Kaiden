@@ -152,7 +152,7 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Endangered Egg", "Crystal Egg"},
+    BuyPetName = {"Crystal Egg"},
 
     -- === BOXES ===
     BuyBoxes = true,
