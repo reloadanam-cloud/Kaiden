@@ -34,7 +34,7 @@ getgenv().VO_CONFIG = {
 
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Endangered Egg"},
+    CustomPenEggs = {"Fairytale Egg", "Endangered Egg"},
 
     CustomPenPets = {
         "Blue Whale",
@@ -152,7 +152,7 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Crystal Egg"},
+    BuyPetName = {"Fairytale Egg", "Crystal Egg"},
 
     -- === BOXES ===
     BuyBoxes = true,
