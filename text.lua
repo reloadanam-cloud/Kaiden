@@ -177,4 +177,28 @@ getgenv().VO_CONFIG = {
     BaitName = "Ice Soup Bait",
 
     -- === AUTO TRADE ===
-    AutoT
+    AutoTrade = false,
+ReceiverUsernames = {},
+
+    TradeItemList = {
+        pets = {"Crystal Egg"}
+    },
+
+    TradePetType = {},
+
+    -- === CASH TRANSFER ===
+    CashTransfer = false,
+    TransferMethods = {},
+    TransferAccount = "",
+
+    -- === DISCORD WEBHOOK ===
+    WebhookEnabled = false,
+    WebhookURL = "",
+    WebhookPets = {},
+
+    ExtraOpti = false
+}
+
+loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"
+))()
