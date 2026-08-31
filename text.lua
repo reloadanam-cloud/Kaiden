@@ -12,14 +12,8 @@ getgenv().VO_CONFIG = {
     EggName = {"Egg Name"},
 
     PetFarmList = {
-        "Chihuahua",
-        "Blue Whale",
-        "Sea Turtle",
-        "Purrowl",
-        "Alicorn",
-        "Dragonfly",
-        "Ancient Dragon",
-        "Kiwi Kiwi",
+        "Three Blind Mice",
+        "Little Lamb",
         "California Condor",
         "Galapagos Sea Lion",
         "Black Tiger",
@@ -27,7 +21,14 @@ getgenv().VO_CONFIG = {
         "Black Rhino",
         "Mexican Wolf",
         "Black-Footed Ferret",
-        "Pangolin"
+        "Pangolin",
+        "Ms. Muffet",
+        "Pinkypillar",
+        "Budgie Witch",
+        "Princess Mare",
+        "Clumpty",
+        "Granny Wolf",
+        "Crimson Cape"
     },
 
     PrioritizePet = "2D Kitty",
@@ -37,13 +38,8 @@ getgenv().VO_CONFIG = {
     CustomPenEggs = {"Fairytale Egg", "Endangered Egg"},
 
     CustomPenPets = {
-        "Blue Whale",
-        "Sea Turtle",
-        "Purrowl",
-        "Alicorn",
-        "Dragonfly",
-        "Ancient Dragon",
-        "Kiwi Kiwi",
+        "Three Blind Mice",
+        "Little Lamb",
         "California Condor",
         "Galapagos Sea Lion",
         "Black Tiger",
@@ -51,7 +47,14 @@ getgenv().VO_CONFIG = {
         "Black Rhino",
         "Mexican Wolf",
         "Black-Footed Ferret",
-        "Pangolin"
+        "Pangolin",
+        "Ms. Muffet",
+        "Pinkypillar",
+        "Budgie Witch",
+        "Princess Mare",
+        "Clumpty",
+        "Granny Wolf",
+        "Crimson Cape"
     },
 
     PrioritizePetPenTypes = {"Normal"},
@@ -69,6 +72,12 @@ getgenv().VO_CONFIG = {
         "Neon Mexican Wolf",
         "Neon Black-Footed Ferret",
         "Neon Pangolin",
+        "Neon Ms. Muffet", 
+        "Neon Pinkypillar",
+        "Neon Budgie Witch",
+        "Neon Princess Mare",
+        "Neon Clumpty",
+        "Neon Granny Wolf"
 
         -- Normal variants
         "Abyssinian Cat",
@@ -116,7 +125,10 @@ getgenv().VO_CONFIG = {
         "Golden Unicorn",
         "Kiwi Kiwi",
         "Strawberry Tortle",
-        "Sushi Penguin"
+        "Sushi Penguin",
+        "Three Blind Mice",
+        "Huntsman Robin",
+        "Little Lamb",
     },
 
     ReleaseTypes = {},
@@ -127,13 +139,8 @@ getgenv().VO_CONFIG = {
     AgePets = true,
 
     AgePetsNames = {
-        "Chihuahua",
-        "Blue Whale",
-        "Sea Turtle",
-        "Purrowl",
-        "Alicorn",
-        "Dragonfly",
-        "Ancient Dragon",
+        "Three Blind Mice",
+        "Little Lamb",
         "California Condor",
         "Galapagos Sea Lion",
         "Black Tiger",
@@ -141,7 +148,14 @@ getgenv().VO_CONFIG = {
         "Black Rhino",
         "Mexican Wolf",
         "Black-Footed Ferret",
-        "Pangolin"
+        "Pangolin",
+        "Ms. Muffet",
+        "Pinkypillar",
+        "Budgie Witch",
+        "Princess Mare",
+        "Clumpty",
+        "Granny Wolf",
+        "Crimson Cape"
     },
 
     AgePetsTypes = {"Normal"},
@@ -152,7 +166,7 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Fairytale Egg", "Crystal Egg"},
+    BuyPetName = {"Crystal Egg", "Fairytale Egg"},
 
     -- === BOXES ===
     BuyBoxes = true,
@@ -160,7 +174,7 @@ getgenv().VO_CONFIG = {
     OpenBoxes = true,
 
     -- === LURE ===
-    BaitName = "",
+    BaitName = "Ice Soup Bait",
 
     -- === AUTO TRADE ===
     AutoTrade = false,
