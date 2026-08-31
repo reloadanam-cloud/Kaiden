@@ -77,7 +77,7 @@ getgenv().VO_CONFIG = {
         "Neon Budgie Witch",
         "Neon Princess Mare",
         "Neon Clumpty",
-        "Neon Granny Wolf"
+        "Neon Granny Wolf",
 
         -- Normal variants
         "Abyssinian Cat",
@@ -96,7 +96,7 @@ getgenv().VO_CONFIG = {
         "Starfish",
         "Swordfish",
         "Toucan",
-        "Gold Mahi Mahi"
+        "Gold Mahi Mahi",
     },
 
     ExcludeReleasePets = {
@@ -177,28 +177,4 @@ getgenv().VO_CONFIG = {
     BaitName = "Ice Soup Bait",
 
     -- === AUTO TRADE ===
-    AutoTrade = false,
-ReceiverUsernames = {},
-
-    TradeItemList = {
-        pets = {"Crystal Egg"}
-    },
-
-    TradePetType = {},
-
-    -- === CASH TRANSFER ===
-    CashTransfer = false,
-    TransferMethods = {},
-    TransferAccount = "",
-
-    -- === DISCORD WEBHOOK ===
-    WebhookEnabled = false,
-    WebhookURL = "",
-    WebhookPets = {},
-
-    ExtraOpti = false
-}
-
-loadstring(game:HttpGet(
-    "https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"
-))()
+    AutoT
