@@ -96,7 +96,7 @@ getgenv().VO_CONFIG = {
         "Starfish",
         "Swordfish",
         "Toucan",
-        "Gold Mahi Mahi",
+        "Gold Mahi Mahi"
     },
 
     ExcludeReleasePets = {
@@ -128,7 +128,7 @@ getgenv().VO_CONFIG = {
         "Sushi Penguin",
         "Three Blind Mice",
         "Huntsman Robin",
-        "Little Lamb",
+        "Little Lamb"
     },
 
     ReleaseTypes = {},
