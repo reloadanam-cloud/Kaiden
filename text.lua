@@ -57,7 +57,7 @@ getgenv().VO_CONFIG = {
         "Crimson Cape"
     },
 
-    PrioritizePetPenTypes = {"Normal"},
+    PrioritizePetPenTypes = {"Egg"},
 
     -- === PET RELEASER ===
     PetReleaser = true,
