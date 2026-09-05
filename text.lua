@@ -35,7 +35,7 @@ getgenv().VO_CONFIG = {
 
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Fairytale Egg", "Endangered Egg", "Admin Abuse Egg"},
+    CustomPenEggs = {"Fairytale Egg", "Endangered Egg"},
 
     CustomPenPets = {
         "Three Blind Mice",
