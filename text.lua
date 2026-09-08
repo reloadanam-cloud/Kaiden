@@ -13,7 +13,6 @@ getgenv().VO_CONFIG = {
 
     PetFarmList = {
         "Three Blind Mice",
-        "Little Lamb",
         "California Condor",
         "Galapagos Sea Lion",
         "Black Tiger",
@@ -28,6 +27,7 @@ getgenv().VO_CONFIG = {
         "Princess Mare",
         "Clumpty",
         "Granny Wolf",
+        "Little Lamb",
         "Crimson Cape"
     },
 
@@ -39,7 +39,6 @@ getgenv().VO_CONFIG = {
 
     CustomPenPets = {
         "Three Blind Mice",
-        "Little Lamb",
         "California Condor",
         "Galapagos Sea Lion",
         "Black Tiger",
@@ -54,10 +53,11 @@ getgenv().VO_CONFIG = {
         "Princess Mare",
         "Clumpty",
         "Granny Wolf",
+        "Little Lamb",
         "Crimson Cape"
     },
 
-    PrioritizePetPenTypes = {"Egg"},
+    PrioritizePetPenTypes = {"Normal"},
 
     -- === PET RELEASER ===
     PetReleaser = true,
@@ -140,7 +140,6 @@ getgenv().VO_CONFIG = {
 
     AgePetsNames = {
         "Three Blind Mice",
-        "Little Lamb",
         "California Condor",
         "Galapagos Sea Lion",
         "Black Tiger",
@@ -155,6 +154,7 @@ getgenv().VO_CONFIG = {
         "Princess Mare",
         "Clumpty",
         "Granny Wolf",
+        "Little Lamb",
         "Crimson Cape"
     },
 
