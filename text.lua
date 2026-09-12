@@ -169,6 +169,10 @@ getgenv().VO_CONFIG = {
     BuyPets = true,
     BuyPetName = {"Crystal Egg", "Fairytale Egg"},
 
+        -- === STAR REWARDS SHOP ===
+    BuyStarRewards = true,
+    StarRewardBuyList = {"Gemstone Egg"},
+
     -- === BOXES ===
     BuyBoxes = true,
     BoxName = "2D Box",
