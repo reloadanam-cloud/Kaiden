@@ -27,8 +27,7 @@ getgenv().VO_CONFIG = {
         "Budgie Witch",
         "Princess Mare",
         "Clumpty",
-        "Granny Wolf",
-        "Crimson Cape"
+        "Granny Wolf"
     },
 
     PrioritizePet = "2D Kitty",
@@ -80,6 +79,7 @@ getgenv().VO_CONFIG = {
         "Neon Granny Wolf",
 
         -- Normal variants
+        "Crimson Cape",
         "Abyssinian Cat",
         "Ocelot",
         "Orangutan",
@@ -154,8 +154,7 @@ getgenv().VO_CONFIG = {
         "Budgie Witch",
         "Princess Mare",
         "Clumpty",
-        "Granny Wolf",
-        "Crimson Cape"
+        "Granny Wolf"
     },
 
     AgePetsTypes = {"Normal"},
