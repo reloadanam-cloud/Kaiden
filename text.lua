@@ -12,7 +12,6 @@ getgenv().VO_CONFIG = {
     EggName = {"Egg Name"},
 
     PetFarmList = {
-        "Three Blind Mice",
         "Little Lamb",
         "California Condor",
         "Galapagos Sea Lion",
@@ -37,7 +36,6 @@ getgenv().VO_CONFIG = {
     CustomPenEggs = {"Fairytale Egg", "Endangered Egg"},
 
     CustomPenPets = {
-        "Three Blind Mice",
         "Little Lamb",
         "California Condor",
         "Galapagos Sea Lion",
@@ -139,7 +137,6 @@ getgenv().VO_CONFIG = {
     AgePets = true,
 
     AgePetsNames = {
-        "Three Blind Mice",
         "Little Lamb",
         "California Condor",
         "Galapagos Sea Lion",
@@ -158,7 +155,7 @@ getgenv().VO_CONFIG = {
         "Crimson Cape"
     },
 
-    AgePetsTypes = {"Normal"},
+    AgePetsTypes = {"ALL"},
 
     -- === AUTO FUSE ===
     AutoFuse = true,
