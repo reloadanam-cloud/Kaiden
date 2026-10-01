@@ -13,6 +13,7 @@ getgenv().VO_CONFIG = {
 
     PetFarmList = {
         "Little Lamb",
+        "Crimson Cape",
         "California Condor",
         "Galapagos Sea Lion",
         "Black Tiger",
@@ -37,6 +38,7 @@ getgenv().VO_CONFIG = {
 
     CustomPenPets = {
         "Little Lamb",
+        "Crimson Cape",
         "California Condor",
         "Galapagos Sea Lion",
         "Black Tiger",
@@ -75,7 +77,6 @@ getgenv().VO_CONFIG = {
         "Neon Princess Mare",
         "Neon Clumpty",
         "Neon Granny Wolf",
-        "Neon Crimson Cape",
         -- Normal variants
 
         "Abyssinian Cat",
@@ -126,7 +127,8 @@ getgenv().VO_CONFIG = {
         "Sushi Penguin",
         "Three Blind Mice",
         "Huntsman Robin",
-        "Little Lamb"
+        "Little Lamb",
+        "Crimson Cape",
     },
 
     ReleaseTypes = {},
@@ -138,6 +140,7 @@ getgenv().VO_CONFIG = {
 
     AgePetsNames = {
         "Little Lamb",
+        "Crimson Cape",
         "California Condor",
         "Galapagos Sea Lion",
         "Black Tiger",
@@ -151,8 +154,7 @@ getgenv().VO_CONFIG = {
         "Budgie Witch",
         "Princess Mare",
         "Clumpty",
-        "Granny Wolf",
-        "Crimson Cape"
+        "Granny Wolf"
     },
 
     AgePetsTypes = {"ALL"},
