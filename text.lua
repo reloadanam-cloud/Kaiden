@@ -1,7 +1,7 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "7YKD2efpZ4jYvJWBgNlZF2J-VUioU6YPGyj3wb70ugI",
-    DeviceName = "Fairytale Egg",
+    DeviceName = "Friends",
 
 -- === MAIN FARM ===
     PotFarm = true,
@@ -77,9 +77,9 @@ getgenv().VO_CONFIG = {
         "Neon Princess Mare",
         "Neon Clumpty",
         "Neon Granny Wolf",
-
+        "Neon Crimson Cape",
         -- Normal variants
-        "Crimson Cape",
+
         "Abyssinian Cat",
         "Ocelot",
         "Orangutan",
@@ -154,7 +154,8 @@ getgenv().VO_CONFIG = {
         "Budgie Witch",
         "Princess Mare",
         "Clumpty",
-        "Granny Wolf"
+        "Granny Wolf",
+        "Crimson Cape"
     },
 
     AgePetsTypes = {"Normal"},
