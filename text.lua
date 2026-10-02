@@ -12,8 +12,6 @@ getgenv().VO_CONFIG = {
     EggName = {"Egg Name"},
 
     PetFarmList = {
-        "Little Lamb",
-        "Crimson Cape",
         "California Condor",
         "Galapagos Sea Lion",
         "Black Tiger",
@@ -37,8 +35,6 @@ getgenv().VO_CONFIG = {
     CustomPenEggs = {"Fairytale Egg", "Endangered Egg"},
 
     CustomPenPets = {
-        "Little Lamb",
-        "Crimson Cape",
         "California Condor",
         "Galapagos Sea Lion",
         "Black Tiger",
@@ -53,7 +49,7 @@ getgenv().VO_CONFIG = {
         "Princess Mare",
         "Clumpty",
         "Granny Wolf",
-        "Crimson Cape"
+
     },
 
     PrioritizePetPenTypes = {"Egg"},
@@ -139,8 +135,6 @@ getgenv().VO_CONFIG = {
     AgePets = true,
 
     AgePetsNames = {
-        "Little Lamb",
-        "Crimson Cape",
         "California Condor",
         "Galapagos Sea Lion",
         "Black Tiger",
