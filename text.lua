@@ -30,6 +30,13 @@ getgenv().VO_CONFIG = {
 
     PrioritizePet = "2D Kitty",
 
+        -- === HALLOWEEN 2026 EVENT ===
+    AutoCandyCornPile = true,        -- Claim the Candy Corn Pile (requires the 1.25x Candy Multiplier gamepass)
+    AutoFeedStrayCat = true,         -- Feed the Stray Cat once per day/night cycle (uses any normal food)
+    AutoCryptCoffins = true,         -- Rusty Keys on ladder coffins + Mummy Spider (also twig coffins until the nest is done)
+    AutoPigeonNest = true,           -- Put Crypt Twigs into the Haunted Hotel nest (unlocks the Jacobin Pigeon)
+    GhostClustersMinigame = true,    -- Ghost Gallery minigame (farm tasks are fully paused while it runs)
+
     -- === PET PEN ===
     PetPen = true,
     CustomPenEggs = {"Fairytale Egg", "Endangered Egg"},
