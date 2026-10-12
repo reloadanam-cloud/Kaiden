@@ -3,7 +3,7 @@ getgenv().VO_CONFIG = {
     HubKey = "7YKD2efpZ4jYvJWBgNlZF2J-VUioU6YPGyj3wb70ugI",
     DeviceName = "Hallowen",
 
--- === MAIN FARM ===
+    -- === MAIN FARM ===
     PotFarm = true,
     EggFarm = false,
     PetFarm = true,
@@ -12,59 +12,85 @@ getgenv().VO_CONFIG = {
     EggName = {"Egg Name"},
 
     PetFarmList = {
-        "California Condor",
-        "Galapagos Sea Lion",
-        "Black Tiger",
-        "Kakapo",
-        "Black Rhino",
-        "Mexican Wolf",
+     -- Common Pet
+		"Jacobin Pigeon",
+		"Pinkypillar",
+		"Ms. Muffet",
+		"California Condor",
+		"Galapagos Sea Lion",
+
+       -- Uncommon Pet
+		"Black Tiger",
+		"Kakapo",
+		"Princess Mare",
+		"Budgie Witch",
+
+        -- Rare Pet
+		"Mexican Wolf",
+		"Black Rhino",
+		"Clumpty",
+		"Granny Wolf",
+
+        -- Ultra-Rare Pet
         "Black-Footed Ferret",
+		"Crimson Cape",
+		"Little Lamb",
         "Pangolin",
-        "Ms. Muffet",
-        "Pinkypillar",
-        "Budgie Witch",
-        "Princess Mare",
-        "Clumpty",
-        "Granny Wolf"
+
+       -- Legendary Pet 
+		"Purrowl"
     },
 
     PrioritizePet = "2D Kitty",
-
-    -- === HALLOWEEN 2026 EVENT ===
+	
+	   -- === HALLOWEEN 2026 EVENT ===
     AutoCandyCornPile = false,        -- Claim the Candy Corn Pile (requires the 1.25x Candy Multiplier gamepass)
     GhostClustersMinigame = true,    -- Ghost Gallery minigame (farm tasks are fully paused while it runs)
-    HauntletMinigame = true,          -- Hauntlet 2 door-picking minigame (on unless set to false; farm tasks pause while it runs)
+	HauntletMinigame = true,          -- Hauntlet 2 door-picking minigame (on unless set to false; farm tasks pause while it runs)
 
 
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Fairytale Egg", "Endangered Egg"},
+    CustomPenEggs = {"Fairytale Egg"},
 
     CustomPenPets = {
-        "California Condor",
-        "Galapagos Sea Lion",
-        "Black Tiger",
-        "Kakapo",
-        "Black Rhino",
-        "Mexican Wolf",
-        "Black-Footed Ferret",
-        "Pangolin",
-        "Ms. Muffet",
-        "Pinkypillar",
-        "Budgie Witch",
-        "Princess Mare",
-        "Clumpty",
-        "Granny Wolf",
+     -- Common Pet
+		"Jacobin Pigeon",
+		"Pinkypillar",
+		"Ms. Muffet",
+		"California Condor",
+		"Galapagos Sea Lion",
 
+       -- Uncommon Pet
+		"Black Tiger",
+		"Kakapo",
+		"Princess Mare",
+		"Budgie Witch",
+
+        -- Rare Pet
+		"Mexican Wolf",
+		"Black Rhino",
+		"Clumpty",
+		"Granny Wolf",
+
+        -- Ultra-Rare Pet
+        "Black-Footed Ferret",
+		"Crimson Cape",
+		"Little Lamb",
+        "Pangolin",
+
+       -- Legendary Pet
+		"Purrowl"
     },
 
-    PrioritizePetPenTypes = {"Egg"},
+    PrioritizePetPenTypes = {"Neon"},
 
     -- === PET RELEASER ===
     PetReleaser = true,
 
     ReleasePets = {
         -- Neon variants
+		"Mega Jacobin Pigeon",
         "Neon California Condor",
         "Neon Galapagos Sea Lion",
         "Neon Black Tiger",
@@ -73,14 +99,15 @@ getgenv().VO_CONFIG = {
         "Neon Mexican Wolf",
         "Neon Black-Footed Ferret",
         "Neon Pangolin",
-        "Neon Ms. Muffet", 
-        "Neon Pinkypillar",
-        "Neon Budgie Witch",
-        "Neon Princess Mare",
-        "Neon Clumpty",
-        "Neon Granny Wolf",
-        -- Normal variants
+		"Neon Pinkypillar",
+		"Neon Ms. Muffet",
+		"Neon Princess Mare",
+		"Neon Budgie Witch",
+		"Neon Clumpty",
+		"Neon Granny Wolf",
+		"Neon Crimson Cape",
 
+        -- Normal variants
         "Abyssinian Cat",
         "Ocelot",
         "Orangutan",
@@ -97,67 +124,73 @@ getgenv().VO_CONFIG = {
         "Starfish",
         "Swordfish",
         "Toucan",
-        "Gold Mahi Mahi",
+		"Gold Mahi Mahi",
     },
 
     ExcludeReleasePets = {
-        "Dango Penguins",
+        "Frostbite Bear",
         "Dragonfruit Fox",
+        "Dango Penguins",
         "Silverback Gorilla",
+        "Sushi Penguin",
+        "Velocirooster",
+        "2D Doggy",
+        "2D Kitty",
+        "Rainbow Trout",
+        "Tealwood Monster",
+        "Oakee Wizard",
+        "General Sheepdog",
+        "Chihuahua",
+        "Sunflower Friend",
+        "Violet Friend",
+        "Alicorn",
+        "Ancient Dragon",
         "Blue Whale",
         "Sea Turtle",
-        "Alicorn",
         "Dragonfly",
-        "Ancient Dragon",
         "Kiwi Kiwi",
-        "2D Kitty",
-        "2D Doggy",
-        "Chihuahua",
-        "Dango Penguins",
-        "Diamond Dragon",
-        "Diamond Griffin",
-        "Diamond Mahi Mahi",
-        "Diamond Unicorn",
-        "Dragonfly",
-        "Dragonfruit Fox",
-        "Glormy Crab",
-        "Golden Dragon",
-        "Golden Griffin",
-        "Golden Unicorn",
-        "Kiwi Kiwi",
-        "Strawberry Tortle",
-        "Sushi Penguin",
-        "Three Blind Mice",
         "Huntsman Robin",
-        "Little Lamb",
-        "Crimson Cape",
+        "Three Blind Mice"
     },
 
     ReleaseTypes = {},
     ReleaseRarities = {},
-    ExcludeRarities = {},
+    ExcludeRarities = {"Legendary"},
 
     -- === AGE PETS ===
     AgePets = true,
 
     AgePetsNames = {
-        "California Condor",
-        "Galapagos Sea Lion",
-        "Black Tiger",
-        "Kakapo",
-        "Black Rhino",
-        "Mexican Wolf",
+        -- Ultra-Rare Pet
+		"Jacobin Pigeon",
         "Black-Footed Ferret",
-        "Pangolin",
-        "Ms. Muffet",
-        "Pinkypillar",
-        "Budgie Witch",
-        "Princess Mare",
-        "Clumpty",
-        "Granny Wolf"
+		"Pangolin",
+		"Crimson Cape",
+		"Little Lamb",
+
+        -- Rare Pet
+		"Mexican Wolf",
+		"Black Rhino",
+		"Clumpty",
+		"Granny Wolf",
+
+        -- Uncommon Pet
+		"Black Tiger",
+		"Kakapo",
+		"Princess Mare",
+		"Budgie Witch",
+
+        -- Common Pet
+		"Pinkypillar",
+		"Ms. Muffet",
+		"California Condor",
+		"Galapagos Sea Lion",
+
+       -- Legendary Pet
+		"Purrowl"
     },
 
-    AgePetsTypes = {"ALL"},
+    AgePetsTypes = {"Normal"},
 
     -- === AUTO FUSE ===
     AutoFuse = true,
@@ -165,9 +198,9 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Crystal Egg", "Fairytale Egg"},
-
-        -- === STAR REWARDS SHOP ===
+    BuyPetName = {"Fairytale Egg", "Crystal Egg", "Skelicorn"},
+	
+	-- === STAR REWARDS SHOP ===
     BuyStarRewards = true,
     StarRewardBuyList = {"Gemstone Egg"},
 
@@ -177,14 +210,14 @@ getgenv().VO_CONFIG = {
     OpenBoxes = true,
 
     -- === LURE ===
-    BaitName = "Ice Soup Bait",
+    BaitName = "ice_dimension_2025_ice_soup_bait",
 
     -- === AUTO TRADE ===
-    AutoTrade = false,
-ReceiverUsernames = {},
+    AutoTrade = true,
+	ReceiverUsernames = {"laptopgod2020", "jessbenkoontop"},
 
     TradeItemList = {
-        pets = {"Crystal Egg"}
+        pets = {"Crystal Egg", "Admin Abuse Egg"}
     },
 
     TradePetType = {},
@@ -199,7 +232,7 @@ ReceiverUsernames = {},
     WebhookURL = "",
     WebhookPets = {},
 
-    ExtraOpti = false
+    ExtraOpti = true
 }
 
 loadstring(game:HttpGet(
