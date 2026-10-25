@@ -1,194 +1,46 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "7YKD2efpZ4jYvJWBgNlZF2J-VUioU6YPGyj3wb70ugI",
-    DeviceName = "ABCD",
+    DeviceName = "STRAYY",
 
     -- === MAIN FARM ===
     PotFarm = true,
-    EggFarm = false,
-    PetFarm = true,
+    EggFarm = true,
+    PetFarm = false,
     KeepEggFarm = false,
     KeepPetFarm = true,
-    EggName = {"Egg Name"},
+    EggName = {"Cracked Egg"},
 
-    PetFarmList = {
-     -- Common Pet
-		"Jacobin Pigeon",
-		"Pinkypillar",
-		"Ms. Muffet",
-		"California Condor",
-		"Galapagos Sea Lion",
-
-       -- Uncommon Pet
-		"Black Tiger",
-		"Kakapo",
-		"Princess Mare",
-		"Budgie Witch",
-
-        -- Rare Pet
-		"Mexican Wolf",
-		"Black Rhino",
-		"Clumpty",
-		"Granny Wolf",
-
-        -- Ultra-Rare Pet
-        "Black-Footed Ferret",
-		"Crimson Cape",
-		"Little Lamb",
-        "Pangolin",
-
-       -- Legendary Pet 
-		"Purrowl"
-    },
+    PetFarmList = {},
 
     PrioritizePet = "2D Kitty",
-	
-	   -- === HALLOWEEN 2026 EVENT ===
-    AutoCandyCornPile = false,        -- Claim the Candy Corn Pile (requires the 1.25x Candy Multiplier gamepass)
-    GhostClustersMinigame = true,    -- Ghost Gallery minigame (farm tasks are fully paused while it runs)
-	HauntletMinigame = false,          -- Hauntlet 2 door-picking minigame (on unless set to false; farm tasks pause while it runs)
 
+    -- === HALLOWEEN 2026 EVENT ===
+    AutoCandyCornPile = false,        -- Claim the Candy Corn Pile (requires the 1.25x Candy Multiplier gamepass)
+    GhostClustersMinigame = true,     -- Ghost Gallery minigame (on unless set to false; farm tasks pause while it runs; drops Crypt Keys)
+    HauntletMinigame = true,          -- Hauntlet 2 door-picking minigame (on unless set to false; farm tasks pause while it runs)
+    SpotlightMinigame = true,         -- Spotlight circus candy corn minigame (on unless set to false; farm tasks pause while it runs)
 
     -- === PET PEN ===
     PetPen = true,
-    CustomPenEggs = {"Fairytale Egg"},
+    CustomPenEggs = {"Cracked Egg"},
 
-    CustomPenPets = {
-     -- Common Pet
-		"Jacobin Pigeon",
-		"Pinkypillar",
-		"Ms. Muffet",
-		"California Condor",
-		"Galapagos Sea Lion",
+    CustomPenPets = {},
 
-       -- Uncommon Pet
-		"Black Tiger",
-		"Kakapo",
-		"Princess Mare",
-		"Budgie Witch",
-
-        -- Rare Pet
-		"Mexican Wolf",
-		"Black Rhino",
-		"Clumpty",
-		"Granny Wolf",
-
-        -- Ultra-Rare Pet
-        "Black-Footed Ferret",
-		"Crimson Cape",
-		"Little Lamb",
-        "Pangolin",
-
-       -- Legendary Pet
-		"Purrowl"
-    },
-
-    PrioritizePetPenTypes = {"Neon"},
+    PrioritizePetPenTypes = {"ALL"},
 
     -- === PET RELEASER ===
     PetReleaser = true,
 
-    ReleasePets = {
-        -- Neon variants
-		"Mega Jacobin Pigeon",
-        "Neon California Condor",
-        "Neon Galapagos Sea Lion",
-        "Neon Black Tiger",
-        "Neon Kakapo",
-        "Neon Black Rhino",
-        "Neon Mexican Wolf",
-        "Neon Black-Footed Ferret",
-        "Neon Pangolin",
-		"Neon Pinkypillar",
-		"Neon Ms. Muffet",
-		"Neon Princess Mare",
-		"Neon Budgie Witch",
-		"Neon Clumpty",
-		"Neon Granny Wolf",
-		"Neon Crimson Cape",
-
-        -- Normal variants
-        "Abyssinian Cat",
-        "Ocelot",
-        "Orangutan",
-        "Parakeet",
-        "Zebra",
-        "Badger",
-        "Corgi",
-        "Ginger Cat",
-        "Grinmoire",
-        "Orca",
-        "Pomeranian",
-        "Ribbon Seal",
-        "Robot",
-        "Starfish",
-        "Swordfish",
-        "Toucan",
-		"Gold Mahi Mahi",
-    },
-
-    ExcludeReleasePets = {
-        "Frostbite Bear",
-        "Dragonfruit Fox",
-        "Dango Penguins",
-        "Silverback Gorilla",
-        "Sushi Penguin",
-        "Velocirooster",
-        "2D Doggy",
-        "2D Kitty",
-        "Rainbow Trout",
-        "Tealwood Monster",
-        "Oakee Wizard",
-        "General Sheepdog",
-        "Chihuahua",
-        "Sunflower Friend",
-        "Violet Friend",
-        "Alicorn",
-        "Ancient Dragon",
-        "Blue Whale",
-        "Sea Turtle",
-        "Dragonfly",
-        "Kiwi Kiwi",
-        "Huntsman Robin",
-        "Three Blind Mice"
-    },
-
+    ReleasePets = {},
     ReleaseTypes = {},
-    ReleaseRarities = {},
+    ReleaseRarities = {"Common", "Uncommon", "Rare", "Ultra Rare"},
     ExcludeRarities = {"Legendary"},
 
     -- === AGE PETS ===
     AgePets = true,
 
-    AgePetsNames = {
-        -- Ultra-Rare Pet
-		"Jacobin Pigeon",
-        "Black-Footed Ferret",
-		"Pangolin",
-		"Crimson Cape",
-		"Little Lamb",
-
-        -- Rare Pet
-		"Mexican Wolf",
-		"Black Rhino",
-		"Clumpty",
-		"Granny Wolf",
-
-        -- Uncommon Pet
-		"Black Tiger",
-		"Kakapo",
-		"Princess Mare",
-		"Budgie Witch",
-
-        -- Common Pet
-		"Pinkypillar",
-		"Ms. Muffet",
-		"California Condor",
-		"Galapagos Sea Lion",
-
-       -- Legendary Pet
-		"Purrowl"
-    },
+    AgePetsNames = {},
 
     AgePetsTypes = {"Normal"},
 
@@ -198,9 +50,9 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Fairytale Egg", "Crystal Egg", "Skelicorn"},
-	
-	-- === STAR REWARDS SHOP ===
+    BuyPetName = {"Stray Cat Dragon", "Crystal Egg", "Cracked Egg"},
+
+    -- === STAR REWARDS SHOP ===
     BuyStarRewards = true,
     StarRewardBuyList = {"Gemstone Egg"},
 
@@ -213,26 +65,36 @@ getgenv().VO_CONFIG = {
     BaitName = "ice_dimension_2025_ice_soup_bait",
 
     -- === AUTO TRADE ===
-    AutoTrade = true,
-	ReceiverUsernames = {"laptopgod2020", "jessbenkoontop"},
+    AutoTrade = false,
+    ReceiverUsernames = {},
 
     TradeItemList = {
-        pets = {"Crystal Egg", "Admin Abuse Egg"}
+        pets = {"Crystal Egg", "Stray Cat Dragon"}
     },
 
-    TradePetType = {},
+    TradePetType = {"ALL"},
 
     -- === CASH TRANSFER ===
     CashTransfer = false,
     TransferMethods = {},
     TransferAccount = "",
 
-    -- === DISCORD WEBHOOK ===
+        -- === DISCORD WEBHOOK ===
     WebhookEnabled = false,
-    WebhookURL = "",
-    WebhookPets = {},
+    WebhookURL = "https://discord.com/api/webhooks/1521141072917434370/W3PaD0c85z-OcG65xELZjGlljPOP3OBgZbkvSKK03-OMuXmKTeG4WEJwE-nxbnTIFPuJ",
+    WebhookPets = {
+        "Dragonfruit Fox",
+        "Dango Penguins",
+        "Silverback Gorilla",
+        "Velocirooster",
+        "Sushi Penguin",
+        "Tealwood Monster",
+        "Emberlight",
+        "Rainbow Trout",
+    "Strawberry Tortle"
+    },
 
-    ExtraOpti = true
+    ExtraOpti = false
 }
 
 loadstring(game:HttpGet(
