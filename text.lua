@@ -1,7 +1,7 @@
 getgenv().VO_CONFIG = {
     -- === HUB / AUTH ===
     HubKey = "7YKD2efpZ4jYvJWBgNlZF2J-VUioU6YPGyj3wb70ugI",
-    DeviceName = "VIP",
+    DeviceName = "VPS",
 
     -- === MAIN FARM (choose one mode) ===
     PotFarm = true,
@@ -12,38 +12,22 @@ getgenv().VO_CONFIG = {
     KeepPetFarm = true, -- If true, will switch back when PetFarmList targets appear
     EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
     PetFarmList = {
-        "Neon Pinkypillar",
-        "Neon Ms. Muffet",
-        "Neon Budgie Witch",
-        "Neon Princess Mare",
-        "Neon Clumpty",
-        "Neon Granny Wolf",
-        "Neon Little Lamb",
-        "Neon Crimson Cape",
-        "Neon Mummy Spider",
-        "Neon Orangutan",
-        "Neon Parakeet",
-        "Neon Camel",
-        "Neon Donkey",
-        "Neon Poodle",
-        "Neon Ant",
-        "Neon Mouse",
-        "Normal Pinkypillar",
-        "Normal Ms. Muffet",
-        "Normal Budgie Witch",
-        "Normal Princess Mare",
+	"Normal Mummy Spider",
         "Normal Clumpty",
         "Normal Granny Wolf",
         "Normal Little Lamb",
         "Normal Crimson Cape",
-        "Mummy Spider",
-        "Orangutan",
-        "Parakeet",
-        "Camel",
-        "Donkey",
-        "Poodle",
-        "Ant",
-        "Mouse"
+        "Normal Budgie Witch",
+        "Normal Princess Mare",
+        "Normal Pinkypillar",
+        "Normal Ms. Muffet",
+        "Normal Orangutan",
+        "Normal Parakeet",
+        "Normal Camel",
+        "Normal Donkey",
+        "Normal Poodle",
+        "Normal nt",
+        "Normal Mouse"
     },
     Farm2DEvent = true,
     PrioritizePet = "2D Kitty",
@@ -58,36 +42,29 @@ getgenv().VO_CONFIG = {
     PetPen = true,
     CustomPenEggs = {"Fairytale Egg"},
     CustomPenPets = {
-        "Neon Pinkypillar",
-        "Neon Ms. Muffet",
-        "Neon Budgie Witch",
-        "Neon Princess Mare",
-        "Neon Clumpty",
-        "Neon Granny Wolf",
-        "Neon Little Lamb",
-        "Neon Crimson Cape",
-        "Neon Mummy Spider",
-        "Neon Orangutan",
-        "Neon Parakeet",
-        "Neon Camel",
-        "Neon Donkey",
-        "Neon Poodle",
-        "Neon Ant",
-        "Neon Mouse",
-        "Normal Pinkypillar",
-        "Normal Ms. Muffet",
-        "Normal Budgie Witch",
-        "Normal Princess Mare",
+	"Normal Mummy Spider",
         "Normal Clumpty",
         "Normal Granny Wolf",
         "Normal Little Lamb",
-        "Normal Crimson Cape"
+        "Normal Crimson Cape",
+        "Normal Budgie Witch",
+        "Normal Princess Mare",
+        "Normal Pinkypillar",
+        "Normal Ms. Muffet",
+        "Normal Orangutan",
+        "Normal Parakeet",
+        "Normal Camel",
+        "Normal Donkey",
+        "Normal Poodle",
+        "Normal nt",
+        "Normal Mouse"
     },
-    PrioritizePetPenTypes = {"Egg", "Neon", "Normal"},  -- "Egg", "Normal", "Neon" (empty = all)
+    PrioritizePetPenTypes = {"Normal"},  -- "Egg", "Normal", "Neon" (empty = all)
 
     -- === PET RELEASER ===
     PetReleaser = true,
     ReleasePets = {
+	"Mummy Spider",
         "Pinkypillar",
         "Ms. Muffet",
         "Budgie Witch",
@@ -106,21 +83,31 @@ getgenv().VO_CONFIG = {
         "Mouse"
     },       -- Whitelist: names to release (empty = all)
     ExcludeReleasePets = {}, -- Blacklist: base names or prefixed like ReleasePets ("Neon Dog", "Normal Cat", "Mega FG X")
-    ReleaseTypes = {"Mega"},      -- "Mega", "Neon", "Normal" (empty = all)
+    ReleaseTypes = {"Neon"},      -- "Mega", "Neon", "Normal" (empty = all)
     ReleaseRarities = {},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
     ExcludeRarities = {"Legendary"},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
 
     -- === AGE PETS ===
     AgePets = true,
     AgePetsNames = {
-        "Budgie Witch",
-        "Princess Mare",
-        "Clumpty",
-        "Granny Wolf",
-        "Little Lamb",
-        "Crimson Cape"
+	"Normal Mummy Spider",
+        "Normal Clumpty",
+        "Normal Granny Wolf",
+        "Normal Little Lamb",
+        "Normal Crimson Cape",
+        "Normal Budgie Witch",
+        "Normal Princess Mare",
+        "Normal Pinkypillar",
+        "Normal Ms. Muffet",
+        "Normal Orangutan",
+        "Normal Parakeet",
+        "Normal Camel",
+        "Normal Donkey",
+        "Normal Poodle",
+        "Normal nt",
+        "Normal Mouse"
     },
-    AgePetsTypes = {"Neon"},  -- "Normal", "Neon", "ALL"
+    AgePetsTypes = {"Normal"},  -- "Normal", "Neon", "ALL"
 
     -- === AUTO FUSE ===
     AutoFuse = true,
@@ -128,7 +115,7 @@ getgenv().VO_CONFIG = {
 
     -- === BUY PETS ===
     BuyPets = true,
-    BuyPetName = {"Crystal Egg", "Stray Cat Dragon", "Fairytale Egg"},  -- Loops in order, buys all of first pet then moves to next
+    BuyPetName = {"Crystal Egg", "Skelicorn", "Fairytale Egg"},  -- Loops in order, buys all of first pet then moves to next
 
     -- === STAR REWARDS SHOP ===
     BuyStarRewards = true,
@@ -157,7 +144,7 @@ getgenv().VO_CONFIG = {
         "yanguwes"
     },
     TradeItemList = {
-        pets = {"Crystal Egg", "Stray Cat Dragon", "Three Blind Mice", "Admin Abuse Egg"}
+        pets = {"Crystal Egg", "Skelicorn", "Three Blind Mice", "Admin Abuse Egg"}
     }, -- Per category: { pets = {"Dog","Neon Cat"}, food = {}, toys = {}, ... } ? use "ALL" in a category to allow that whole category (pets still gated by TradePetType for bare names)
     TradePetType = {"ALL"},       -- Only applies to pets: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG" ? not used for food/toys/etc.; inline prefixes on pet strings (e.g. "Mega Dog") bypass this
 
@@ -197,6 +184,6 @@ getgenv().VO_CONFIG = {
         },
     },
 
-    ExtraOpti = true
+    ExtraOpti = false
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"))()
