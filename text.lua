@@ -28,7 +28,8 @@ getgenv().VO_CONFIG = {
         "Normal Poodle",
         "Normal nt",
         "Normal Mouse",
-		"Electric Hornet"
+		"Electric Hornet",
+		"Thunderfisher"
     },
     Farm2DEvent = true,
     PrioritizePet = "2D Kitty",
@@ -45,6 +46,7 @@ getgenv().VO_CONFIG = {
     CustomPenPets = {
 	"Normal Mummy Spider",
 		"Electric Hornet",
+		"Thunderfisher",
         "Normal Clumpty",
         "Normal Granny Wolf",
         "Normal Little Lamb",
@@ -94,6 +96,7 @@ getgenv().VO_CONFIG = {
     AgePetsNames = {
 	"Normal Mummy Spider",
 		"Electric Hornet",
+		"Thunderfisher",
         "Normal Clumpty",
         "Normal Granny Wolf",
         "Normal Little Lamb",
