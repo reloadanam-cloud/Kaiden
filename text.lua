@@ -133,7 +133,7 @@ getgenv().VO_CONFIG = {
     OpenBoxes = {"Box Name"}, -- Box names to open from inventory
 
     -- === LURE ===
-    BaitName = "Storm Chip Cookie Bait", -- "Storm Chip Cookie Bait" or "Cyclone Sponge Bait"
+    BaitName = "Cyclone Sponge Bait", -- "Storm Chip Cookie Bait" or "Cyclone Sponge Bait"
     LightningFarm = true,
 
     -- === AUTO TRADE ===
