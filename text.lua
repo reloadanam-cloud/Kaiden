@@ -139,19 +139,15 @@ getgenv().VO_CONFIG = {
     -- === AUTO TRADE ===
     AutoTrade = true,
     ReceiverUsernames = {
-        "hananifah6",
-        "xkaiden016",
-        "misteryanto6",
-        "kaidenmauhaji",
-        "asedeaharehe",
-        "kaidenstraycat01",
-        "genjotae",
-        "motorpancal",
-        "medanbergetar",
-        "yanguwes"
-    },
+        "jaguartestaja",
+        "jaguarduabuatsg",
+        "nengarumakn",
+        "budiaskanmeo",
+        "NabilaCooper310",
+        "testakunshe",
+        "LiviaAurelia761"
     TradeItemList = {
-        pets = {"Crystal Egg", "Skelicorn", "Three Blind Mice", "Admin Abuse Egg"}
+        pets = {"Crystal Egg", "Haetyphoon", "Admin Abuse Egg"}
     }, -- Per category: { pets = {"Dog","Neon Cat"}, food = {}, toys = {}, ... } ? use "ALL" in a category to allow that whole category (pets still gated by TradePetType for bare names)
     TradePetType = {"ALL"},       -- Only applies to pets: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG" ? not used for food/toys/etc.; inline prefixes on pet strings (e.g. "Mega Dog") bypass this
 
