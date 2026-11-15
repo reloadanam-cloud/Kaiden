@@ -26,7 +26,7 @@ getgenv().VO_CONFIG = {
         "Normal Camel",
         "Normal Donkey",
         "Normal Poodle",
-        "Normal nt",
+        "Normal Ant",
         "Normal Mouse",
 		"Electric Hornet",
 		"Thunderfisher"
@@ -54,7 +54,7 @@ getgenv().VO_CONFIG = {
         "Normal Camel",
         "Normal Donkey",
         "Normal Poodle",
-        "Normal nt",
+        "Normal Ant",
         "Normal Mouse"
     },
     PrioritizePetPenTypes = {"Normal"},  -- "Egg", "Normal", "Neon" (empty = all)
@@ -104,7 +104,7 @@ getgenv().VO_CONFIG = {
         "Normal Camel",
         "Normal Donkey",
         "Normal Poodle",
-        "Normal nt",
+        "Normal Ant",
         "Normal Mouse"
     },
     AgePetsTypes = {"Normal"},  -- "Normal", "Neon", "ALL"
@@ -140,6 +140,7 @@ getgenv().VO_CONFIG = {
         "NabilaCooper310",
         "testakunshe",
         "LiviaAurelia761"
+		
     TradeItemList = {
         pets = {"Crystal Egg", "Haetyphoon", "Admin Abuse Egg"}
     }, -- Per category: { pets = {"Dog","Neon Cat"}, food = {}, toys = {}, ... } ? use "ALL" in a category to allow that whole category (pets still gated by TradePetType for bare names)
