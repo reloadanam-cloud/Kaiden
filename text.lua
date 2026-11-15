@@ -137,7 +137,7 @@ getgenv().VO_CONFIG = {
         "DavidKongYuting662",
         "LilyZhaoXiaolong218",
         "TobiasHanZhenyu119",
-		"GraceTaoZixuan756"
+		"GraceTaoZixuan756",
         "NabilaCooper310",
         "LiviaAurelia761"
 	},
