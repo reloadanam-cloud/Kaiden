@@ -133,12 +133,12 @@ getgenv().VO_CONFIG = {
     -- === AUTO TRADE ===
     AutoTrade = true,
     ReceiverUsernames = {
-        "jaguartestaja",
-        "jaguarduabuatsg",
-        "nengarumakn",
-        "budiaskanmeo",
+        "AriaLongYuting941",
+        "DavidKongYuting662",
+        "LilyZhaoXiaolong218",
+        "TobiasHanZhenyu119",
+		"GraceTaoZixuan756"
         "NabilaCooper310",
-        "testakunshe",
         "LiviaAurelia761"
 	},
 	
