@@ -143,7 +143,7 @@ getgenv().VO_CONFIG = {
 	},
 	
     TradeItemList = {
-        pets = {"Crystal Egg", "Haetyphoon", "Admin Abuse Egg"}
+        pets = {"Crystal Egg", "Haetyphoon", "Admin Abuse Egg", "Neon_FG Three Blind Mice", "Neon_FG Thunderfisher", "Neon_FG Electric Hornet"}
     }, -- Per category: { pets = {"Dog","Neon Cat"}, food = {}, toys = {}, ... } ? use "ALL" in a category to allow that whole category (pets still gated by TradePetType for bare names)
     TradePetType = {"ALL"},       -- Only applies to pets: "ALL", "Mega", "Neon", "Regular", "Neon_FG", "Regular_FG" ? not used for food/toys/etc.; inline prefixes on pet strings (e.g. "Mega Dog") bypass this
 
