@@ -140,7 +140,8 @@ getgenv().VO_CONFIG = {
         "NabilaCooper310",
         "testakunshe",
         "LiviaAurelia761"
-		
+	},
+	
     TradeItemList = {
         pets = {"Crystal Egg", "Haetyphoon", "Admin Abuse Egg"}
     }, -- Per category: { pets = {"Dog","Neon Cat"}, food = {}, toys = {}, ... } ? use "ALL" in a category to allow that whole category (pets still gated by TradePetType for bare names)
